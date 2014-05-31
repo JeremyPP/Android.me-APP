@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@drawable/staggered" >
+
+    <TextView
+        android:id="@+id/list_tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+    
+    <ImageView
+        android:id="@+id/list_imgPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_tvTitle"
+        android:adjustViewBounds="true"  />
+    
+    <ProgressBar
+        android:id="@+id/list_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_imgPhoto"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/list_tvResume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_loading"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <View 
+        android:id="@+id/list_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/list_tvResume"
+        android:background="#dadada" />
+
+    <TextView
+        android:id="@+id/list_tvLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/list_tvComments"
+        android:layout_alignBottom="@+id/list_tvComments"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:textColor="#969696" />
+
+    <TextView
+        android:id="@+id/list_tvComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_divider"
+        android:layout_toLeftOf="@+id/list_tvLikes"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:textColor="#969696" />
+
+</RelativeLayout>

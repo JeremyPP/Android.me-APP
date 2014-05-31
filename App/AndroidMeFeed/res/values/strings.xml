@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="site_name">Android.me</string>
+    <string name="app_name">Android.me News Feed</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_likes">Likes</string>
+	<string name="notification_title">Android.me Feed</string>
+	<string name="notification_text">You have unread articles</string>
+	<string name="notification_ticker">New article available!</string>
+	<string name="article_writer">By:</string>
+	<string name="article_date">Posted:</string>
+	<string name="article_previous">Previous</string>
+	<string name="article_next">Next</string>
+	<string name="article_comments">comments</string>
+	<string name="article_likes">likes</string>
+	<string name="article_from">From/Via:</string>
+	<string name="loading">Checking site....</string>
+	<string name="error_title">Android.me: Oops.....</string>
+	<string name="error_message">A error was found! Please, contact the administrator. Error message:\n</string>
+	<string name="settings_general"><b>GENERAL</b></string>
+	<string name="settings_about"><b>ABOUT</b></string>
+	<string name="settings_notifications">Notifications</string>
+	<string name="settings_notifications_description">Notify me when a new article is available</string>
+	<string name="settings_cache">Enable cache</string>
+	<string name="settings_cache_description">Save images and resources on your device\'s memory</string>
+	<string name="settings_build">Build version</string>
+	<string name="settings_build_version">Version: 1.0.00</string>
+	<string name="noconnection_load">Can\'t load new posts</string>
+	<string name="noconnection_retry">Retry</string>
+	<string name="main_error"><b>You are not connected to the network. Error reaching server.</b></string>
+	<string name="drawer_open">Click here to open the sidebar</string>
+	<string name="drawer_close">Click here to close the sidebar</string>
+	<color name="drawer_gray">#8F8F8F</color>
+	<color name="drawer_purple">#6472CD</color>
+
+</resources>

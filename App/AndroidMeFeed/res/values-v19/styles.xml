@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+        Base application theme for API 19+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 19+ devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- API 19 theme customizations can go here. -->
+    	<item name="android:windowTranslucentNavigation">@bool/transparent_nav</item>
+    	<item name="android:windowTranslucentStatus">true</item>
+    	<item name="android:windowContentOverlay">@null</item>  
+    	<item name="android:actionMenuTextColor">#ffffff</item>
+    </style>
+    
+</resources>
