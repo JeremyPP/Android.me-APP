@@ -359,7 +359,7 @@ public class MainActivity extends Activity {
 			if (mArticles != null)
 				fillList();
 		} catch (Exception e) {
-			Log.e(TAG, e.getMessage());
+			e.fillInStackTrace();
 		}
 		
 		//verify is notifications preference is on
