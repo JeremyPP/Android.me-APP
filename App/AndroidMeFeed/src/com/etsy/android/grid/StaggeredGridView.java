@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ndroidme;
+package com.etsy.android.grid;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -27,6 +27,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.Arrays;
+
+import com.ndroidme.R;
 
 /**
  * A staggered grid view which supports multiple columns with rows of varying sizes.
@@ -922,8 +924,13 @@ public class StaggeredGridView extends ExtendableListView {
         if (DBG) Log.d(TAG, "onColumnSync column width:" + mColumnWidth);
 
         for (int pos = 0; pos < syncPosition; pos++) {
+            //Check for weirdness again
+            final Double heightRatio = positionHeightRatios.get(pos);
+            if(heightRatio == null){
+                break;
+            }
+
             final GridItemRecord rec = getOrCreateRecord(pos);
-            final double heightRatio = positionHeightRatios.get(pos);
             final int height = (int) (mColumnWidth * heightRatio);
             rec.heightRatio = heightRatio;
 

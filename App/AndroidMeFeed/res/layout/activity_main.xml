@@ -24,7 +24,7 @@
 		        android:layout_alignParentBottom="true"
 		        android:layout_centerHorizontal="true"
 		        android:visibility="gone" />
-	        <com.ndroidme.StaggeredGridView
+	        <com.etsy.android.grid.StaggeredGridView
 	            xmlns:app="http://schemas.android.com/apk/res-auto"
 	            android:id="@+id/main_listView"
 	            android:layout_width="match_parent"

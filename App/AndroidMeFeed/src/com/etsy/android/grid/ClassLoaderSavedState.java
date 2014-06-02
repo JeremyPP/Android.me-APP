@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.ndroidme;
+package com.etsy.android.grid;
 
 import android.os.Parcel;
 import android.os.Parcelable;

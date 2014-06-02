@@ -15,9 +15,8 @@
  * limitations under the License.
  */
 
-package com.ndroidme;
+package com.etsy.android.grid;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.graphics.Rect;
@@ -57,7 +56,7 @@ import java.util.ArrayList;
  * Be careful with this - not everything may be how you expect if you assume this to be
  * a regular old {@link android.widget.ListView}
  */
-@SuppressLint("WrongCall") public abstract class ExtendableListView extends AbsListView {
+public abstract class ExtendableListView extends AbsListView {
 
     private static final String TAG = "ExtendableListView";
 
@@ -529,6 +528,7 @@ import java.util.ArrayList;
 
             if (mAdapter == null) {
                 clearState();
+                invokeOnItemScrollListener();
                 return;
             }
 
@@ -552,6 +552,7 @@ import java.util.ArrayList;
             // and calling it a day
             if (mItemCount == 0) {
                 clearState();
+                invokeOnItemScrollListener();
                 return;
             }
             else if (mItemCount != mAdapter.getCount()) {
@@ -614,6 +615,7 @@ import java.util.ArrayList;
             mDataChanged = false;
             mNeedSync = false;
             mLayoutMode = LAYOUT_NORMAL;
+            invokeOnItemScrollListener();
         } finally {
             mBlockLayoutRequests = false;
         }
@@ -706,8 +708,11 @@ import java.util.ArrayList;
                 break;
 
             case MotionEvent.ACTION_UP:
-            default:
                 handled = onTouchUp(event);
+                break;
+
+            default:
+                handled = false;
                 break;
         }
 
@@ -2039,6 +2044,7 @@ import java.util.ArrayList;
 
             // We are now GONE, so pending layouts will not be dispatched.
             // Force one here to make sure that the state of the list matches
+            // the state of the adapter.
             if (mDataChanged) {
                 this.onLayout(false, getLeft(), getTop(), getRight(), getBottom());
             }
@@ -2593,9 +2599,10 @@ import java.util.ArrayList;
         if (infos == null) return;
         for (FixedViewInfo info : infos) {
             final View child = info.view;
-            final LayoutParams p = (LayoutParams) child.getLayoutParams();
-            if (p != null) {
-                p.recycledHeaderFooter = false;
+            final ViewGroup.LayoutParams p = child.getLayoutParams();
+
+            if (p instanceof LayoutParams) {
+                ((LayoutParams) p).recycledHeaderFooter = false;
             }
         }
     }
@@ -2741,7 +2748,8 @@ import java.util.ArrayList;
                 final View view = getChildAt(motionPosition); // a fix by @pboos
 
                 if (view != null) {
-                    performItemClick(view, motionPosition + mFirstPosition, adapter.getItemId(motionPosition));
+                    final int clickPosition = motionPosition + mFirstPosition;
+                    performItemClick(view, clickPosition, adapter.getItemId(clickPosition));
                 }
             }
         }
