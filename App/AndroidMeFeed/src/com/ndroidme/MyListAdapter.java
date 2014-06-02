@@ -4,6 +4,9 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Set;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -32,36 +35,6 @@ public class MyListAdapter extends ArrayAdapter<Article> {
 		this.mRepository = ArticlesRepository.sRepository.getRepository();
 	}
 	
-	private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-		int id;
-	    ImageView bmImage;
-	    ProgressBar bar;
-
-	    public DownloadImageTask(int id, ImageView bmImage, ProgressBar bar) {
-	    	this.id = id;
-	        this.bmImage = bmImage;
-	        this.bar = bar;
-	    }
-
-	    protected Bitmap doInBackground(String... urls) {
-	        String urldisplay = urls[0];
-	        Bitmap mIcon11 = null;
-	        try {
-	            InputStream in = new java.net.URL(urldisplay).openStream();
-	            mIcon11 = BitmapFactory.decodeStream(in);
-	        } catch (Exception e) {
-	            Log.e(MainActivity.TAG, e.getMessage());
-	            e.printStackTrace();
-	        }
-	        return mIcon11;
-	    }
-
-	    protected void onPostExecute(Bitmap result) {
-	    	bar.setVisibility(ProgressBar.GONE);
-	        bmImage.setImageBitmap(result);
-	        ArticlesRepository.sRepository.saveImage(id, result);
-	    }
-	} 
 	
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
@@ -74,7 +47,7 @@ public class MyListAdapter extends ArrayAdapter<Article> {
 		TextView tvResume = (TextView)rowView.findViewById(R.id.list_tvResume);
 		TextView tvComments = (TextView)rowView.findViewById(R.id.list_tvComments);
 		TextView tvLikes = (TextView)rowView.findViewById(R.id.list_tvLikes);
-		ProgressBar bar = (ProgressBar)rowView.findViewById(R.id.list_loading);
+		final ProgressBar bar = (ProgressBar)rowView.findViewById(R.id.list_loading);
 /*		
 		if (mRepository.contains(mValues[position].getId())) {
 			imgIcon.setImageResource(FeedConfig.FM_READ_ICON);
@@ -87,13 +60,13 @@ public class MyListAdapter extends ArrayAdapter<Article> {
 		tvComments.setText(String.format("%d %s", mValues.get(position).getCountComments(), parent.getResources().getString(R.string.article_comments)));
 		tvLikes.setText(String.format("%d %s", mValues.get(position).getCountLikes(), parent.getResources().getString(R.string.article_likes)));
 		
-		Bitmap img = ArticlesRepository.sRepository.getLoadedImage(mValues.get(position).getId());
-		if (img != null) {
-			imgPhoto.setImageBitmap(img);
-			bar.setVisibility(ProgressBar.GONE);
-		} else {
-			new DownloadImageTask(mValues.get(position).getId(), imgPhoto, bar).execute(mValues.get(position).getPhotoUrl());
-		}
+		ImageLoader.getInstance().displayImage(mValues.get(position).getPhotoUrl(), imgPhoto, new SimpleImageLoadingListener() {
+		    @Override
+		    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+		    	bar.setVisibility(View.GONE);
+		    }
+		});
+
 		
 		return rowView;
 	}

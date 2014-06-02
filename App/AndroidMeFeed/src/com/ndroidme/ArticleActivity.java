@@ -2,6 +2,8 @@ package com.ndroidme;
 
 import java.io.InputStream;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -31,34 +33,6 @@ public class ArticleActivity extends Activity {
 	private ImageView imgPhoto;
 	private WebView wvContent;
 	private Drawable mActionBarBackgroundDrawable;
-	
-	private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-		int id;
-	    ImageView bmImage;
-
-	    public DownloadImageTask(int id, ImageView bmImage) {
-	    	this.id = id;
-	        this.bmImage = bmImage;
-	    }
-
-	    protected Bitmap doInBackground(String... urls) {
-	        String urldisplay = urls[0];
-	        Bitmap mIcon11 = null;
-	        try {
-	        	InputStream in = new java.net.URL(urldisplay).openStream();
-	            mIcon11 = BitmapFactory.decodeStream(in);
-	        } catch (Exception e) {
-	            Log.e(MainActivity.TAG, e.getMessage());
-	            //e.printStackTrace();
-	        }
-	        return mIcon11;
-	    }
-
-	    protected void onPostExecute(Bitmap result) {
-	        bmImage.setImageBitmap(result);
-	        ArticlesRepository.sRepository.saveImage(id, result);
-	    }
-	} 
 	
 	private class GetMoreInfo extends AsyncTask<String, Void, Void> {
 		Article article;
@@ -100,12 +74,8 @@ public class ArticleActivity extends Activity {
 		tvFrom.setVisibility(TextView.VISIBLE);
 		wvFrom.setVisibility(TextView.VISIBLE);
 		ArticlesRepository.sRepository.insert(mArticle);
-		Bitmap img = ArticlesRepository.sRepository.getLoadedImage(mArticle.getId());
-		if (img != null) {
-			imgPhoto.setImageBitmap(img);
-		} else {
-			new DownloadImageTask(mArticle.getId(), imgPhoto).execute(mArticle.getPhotoUrl());
-		}
+		ImageLoader.getInstance().displayImage(mArticle.getPhotoUrl(), imgPhoto);
+
 		tvTitle.setText(mArticle.getTitle());
 		String writer = (getText(R.string.article_writer) + " " + "<b>" + mArticle.getWriter() + "</b>").toUpperCase();
 		String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
