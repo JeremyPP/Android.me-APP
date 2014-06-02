@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import com.etsy.android.grid.StaggeredGridView;
+
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
@@ -23,6 +25,7 @@ import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -70,7 +73,11 @@ public class MainActivity extends Activity {
 			mList.setColumnCountLandscape(2);
 		}
 		mAdapter = new MyListAdapter(this, mArticles);
+		final View footer = ((LayoutInflater)MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
+                .inflate(R.layout.progress_bar, null, false);
+		mList.addFooterView(footer);
 		mList.setAdapter(mAdapter);
+		footer.setVisibility(View.GONE);
 		mList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
@@ -96,9 +103,8 @@ public class MainActivity extends Activity {
 					if (!mHasRequestedMore) {
 						mIndex++;
 						mHasRequestedMore = true;
-						final ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading_list);
-						bar.setVisibility(ProgressBar.VISIBLE);
-					
+						footer.setVisibility(View.VISIBLE);
+						
 						new Thread(new Runnable() {
 							 
 							@Override
@@ -116,18 +122,11 @@ public class MainActivity extends Activity {
 											try {
 												mAdapter.notifyDataSetChanged();
 												mHasRequestedMore = false;
-												//mList.smoothScrollToPosition(lastInScreen + 1);
-												/*mList.postDelayed(new Runnable() {
-											        @Override
-											        public void run() {
-											        	mList.setSelection(lastInScreen + 1);
-											        }
-											    }, 500);*/
-												bar.setVisibility(ProgressBar.GONE);
+												
 												RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_error);
 												layout.setVisibility(LinearLayout.INVISIBLE);
 											} catch (Exception e) {
-												Log.e(TAG, e.getMessage());
+												e.fillInStackTrace();
 											}
 										}
 									});
@@ -136,7 +135,7 @@ public class MainActivity extends Activity {
 										
 										@Override
 										public void run() {
-											bar.setVisibility(ProgressBar.GONE);
+											footer.setVisibility(View.VISIBLE);
 											RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_error);
 											layout.setVisibility(LinearLayout.VISIBLE);
 											mHasRequestedMore = false;
@@ -144,30 +143,14 @@ public class MainActivity extends Activity {
 											mIndex--;
 										}
 									});
-									//finish();
-									//Log.e(TAG, e.getMessage());
 								}
-								
 							}
 						}).start();
-
 					}
 				}
 			}
 		});
 		mHasRequestedMore = false;
-		/*
-		list.setOnItemClickListener(new OnItemClickListener() {
-			
-			@Override
-		    public void onItemClick(AdapterView<?> parent, View view,
-		            int position, long id) {
-				Intent itemIntent = new Intent(MainActivity.this, ArticleActivity.class);
-				itemIntent.putExtra("articles", mArticles);
-				itemIntent.putExtra("position", position);
-				startActivity(itemIntent);
-		    }
-		});*/
 	}
 
     public boolean isServiceRunning() {
@@ -264,26 +247,14 @@ public class MainActivity extends Activity {
 						mArticles.add(article);
 					}
 					runOnUiThread(new Runnable() {
-			 			
 						@Override
 						public void run() {
 							try {
-								//setContentView(R.layout.activity_main);
 								fillList();
 								ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
 								bar.setVisibility(ProgressBar.GONE);
-								RelativeLayout errorLayout = (RelativeLayout)findViewById(R.id.main_error);
-								errorLayout.setOnClickListener(new View.OnClickListener() {
-									
-									@Override
-									public void onClick(View v) {
-										Intent intent = getIntent();
-										finish();
-										startActivity(intent);
-									}
-								});
 							} catch (Exception e) {
-								Log.e(TAG, e.getMessage());
+								e.fillInStackTrace();
 							}
 						}
 					});
@@ -299,10 +270,8 @@ public class MainActivity extends Activity {
 							startActivity(intent);
 						}
 					});
-					//finish();
-					//Log.e(TAG, e.getMessage());
+					e.fillInStackTrace();
 				}
-				
 			}
 		}).start();
 	}
@@ -355,12 +324,12 @@ public class MainActivity extends Activity {
 
 		new ArticlesRepository(this);
 		//update the list of read articles
-		try {
-			if (mArticles != null)
-				fillList();
-		} catch (Exception e) {
-			e.fillInStackTrace();
-		}
+//		try {
+//			if (mArticles != null)
+//				fillList();
+//		} catch (Exception e) {
+//			e.fillInStackTrace();
+//		}
 		
 		//verify is notifications preference is on
 		SharedPreferences sharedPreferences = PreferenceManager
