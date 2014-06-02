@@ -38,37 +38,48 @@ public class MyListAdapter extends ArrayAdapter<Article> {
 	
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		LayoutInflater inflater = (LayoutInflater) mContext
-				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View rowView = inflater.inflate(layoutId, parent, false);
+		final ViewHolder viewHolder;
+
+        if(convertView == null){
+			LayoutInflater inflater = (LayoutInflater) mContext
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			convertView = inflater.inflate(layoutId, parent, false);
+			
+			viewHolder = new ViewHolder();
+			
+			viewHolder.tvTitle = (TextView)convertView.findViewById(R.id.list_tvTitle);
+			viewHolder.imgPhoto = (ImageView)convertView.findViewById(R.id.list_imgPhoto);
+			viewHolder.tvResume = (TextView)convertView.findViewById(R.id.list_tvResume);
+			viewHolder.tvComments = (TextView)convertView.findViewById(R.id.list_tvComments);
+			viewHolder.tvLikes = (TextView)convertView.findViewById(R.id.list_tvLikes);
+			viewHolder.bar = (ProgressBar)convertView.findViewById(R.id.list_loading);
+			convertView.setTag(viewHolder);
+        }else{
+        	viewHolder = (ViewHolder) convertView.getTag();
+        }
+
+        viewHolder.tvTitle.setText(mValues.get(position).getTitle());
+        viewHolder.tvResume.setText(mValues.get(position).getResume());
+        viewHolder.tvComments.setText(String.format("%d %s", mValues.get(position).getCountComments(), parent.getResources().getString(R.string.article_comments)));
+        viewHolder.tvLikes.setText(String.format("%d %s", mValues.get(position).getCountLikes(), parent.getResources().getString(R.string.article_likes)));
 		
-		TextView tvTitle = (TextView)rowView.findViewById(R.id.list_tvTitle);
-		ImageView imgPhoto = (ImageView)rowView.findViewById(R.id.list_imgPhoto);
-		TextView tvResume = (TextView)rowView.findViewById(R.id.list_tvResume);
-		TextView tvComments = (TextView)rowView.findViewById(R.id.list_tvComments);
-		TextView tvLikes = (TextView)rowView.findViewById(R.id.list_tvLikes);
-		final ProgressBar bar = (ProgressBar)rowView.findViewById(R.id.list_loading);
-/*		
-		if (mRepository.contains(mValues[position].getId())) {
-			imgIcon.setImageResource(FeedConfig.FM_READ_ICON);
-		} else {
-			imgIcon.setImageResource(FeedConfig.FM_UNREAD_ICON);
-		}
-		*/
-		tvTitle.setText(mValues.get(position).getTitle());
-		tvResume.setText(mValues.get(position).getResume());
-		tvComments.setText(String.format("%d %s", mValues.get(position).getCountComments(), parent.getResources().getString(R.string.article_comments)));
-		tvLikes.setText(String.format("%d %s", mValues.get(position).getCountLikes(), parent.getResources().getString(R.string.article_likes)));
-		
-		ImageLoader.getInstance().displayImage(mValues.get(position).getPhotoUrl(), imgPhoto, new SimpleImageLoadingListener() {
+		ImageLoader.getInstance().displayImage(mValues.get(position).getPhotoUrl(), viewHolder.imgPhoto, new SimpleImageLoadingListener() {
 		    @Override
 		    public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-		    	bar.setVisibility(View.GONE);
+		    	viewHolder.bar.setVisibility(View.GONE);
 		    }
 		});
 
-		
-		return rowView;
+		return convertView;
 	}
+	
+	static class ViewHolder {
+		TextView tvTitle;
+		ImageView imgPhoto;
+		TextView tvResume;
+		TextView tvComments;
+		TextView tvLikes;
+		ProgressBar bar;
+    }
 	
 }
