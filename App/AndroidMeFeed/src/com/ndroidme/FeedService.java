@@ -89,7 +89,7 @@ public class FeedService extends Service {
     				}
     			} catch(Exception e) {
 					stopSelf();
-    				Log.e("com.me.android", e.getMessage());
+    				e.fillInStackTrace();
     			}
     		}
     	};
