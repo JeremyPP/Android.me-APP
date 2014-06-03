@@ -68,6 +68,7 @@ public class MainActivity extends Activity {
 	private void fillList() throws Exception { 
 		mList = (StaggeredGridView)findViewById(R.id.main_listView);
 		if (isTablet(this)) {
+			mList.setColumnCount(2);
 			mList.setColumnCountLandscape(3);
 		} else {
 			mList.setColumnCountLandscape(2);
