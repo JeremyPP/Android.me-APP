@@ -233,6 +233,7 @@ public class MainActivity extends Activity {
 					Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
 					startActivity(intent);
 				}
+				mDrawerLayout.closeDrawers();
 			}
 		});
 	}
