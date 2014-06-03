@@ -13,6 +13,7 @@
         <item name="android:actionBarStyle">@style/Widget.ActionBar</item> 
         <item name="android:windowContentOverlay">@null</item>  
         <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_ab_back_holo_dark_am</item>
     </style>
 
     <!-- Application theme. -->

@@ -8,6 +8,7 @@
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
 		<item name="android:fitsSystemWindows">true</item>
+		<item name="android:homeAsUpIndicator">@drawable/ic_ab_back_holo_dark_am</item>
     </style>
 
 </resources>
