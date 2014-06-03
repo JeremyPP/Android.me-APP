@@ -187,7 +187,6 @@ public class ArticleActivity extends Activity {
 	            onBackPressed();
 	            return true;
 	        }
-
 	    return super.onOptionsItemSelected(item);
 	}
 
