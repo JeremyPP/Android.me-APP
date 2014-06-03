@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_drawer_layout"
     android:layout_width="match_parent"
 	android:layout_height="match_parent"
@@ -36,9 +37,9 @@
 	            app:grid_paddingRight="0dp"
 	            app:grid_paddingTop="-10dp"
 	            app:item_margin="12dp" />
-	        <ProgressBar
+	        <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
 		        android:id="@+id/main_loading"
-		        style="?android:attr/progressBarStyleLarge"
+		        gpb:type="folding_circles"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_centerHorizontal="true"
