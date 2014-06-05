@@ -311,7 +311,7 @@ public class MainActivity extends Activity {
 			// Holo light action bar color is #DDDDDD
 			int actionBarColor = Color.parseColor("#6472CD");
 			tintManager.setStatusBarTintColor(actionBarColor);
-			int padding = dpToPx(this, 70);
+			int padding = dpToPx(this, 75);
 			View layout = (View)findViewById(R.id.main_right_layout);
 			layout.setPadding(0, padding, 0, 0);
 			padding = dpToPx(this, 70);
