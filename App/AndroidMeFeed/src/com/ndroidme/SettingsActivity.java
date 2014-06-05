@@ -56,8 +56,9 @@ public class SettingsActivity extends Activity {
 			int actionBarColor = Color.parseColor("#000000");
 			tintManager.setStatusBarTintColor(actionBarColor);
 			int padding = MainActivity.dpToPx(this, 80);
+			int leftRightPadding=MainActivity.dpToPx(this, 20);
 			View layout = (View)findViewById(R.id.settings_layout);
-			layout.setPadding(0, padding, 0, 0);
+			layout.setPadding(leftRightPadding, padding,leftRightPadding, 0);
 		}
 		
 		getActionBar().setHomeButtonEnabled(true);
