@@ -49,17 +49,17 @@ public class SettingsActivity extends Activity {
 
 		getActionBar().setBackgroundDrawable(mActionBarBackgroundDrawable);
 
-		/*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 			SystemBarTintManager tintManager = new SystemBarTintManager(this);
 			tintManager.setStatusBarTintEnabled(true);
 			// Holo light action bar color is #DDDDDD
 			int actionBarColor = Color.parseColor("#000000");
 			tintManager.setStatusBarTintColor(actionBarColor);
-			int padding = MainActivity.dpToPx(this, 80);
+			int padding = MainActivity.dpToPx(this, 75);
 			int leftRightPadding=MainActivity.dpToPx(this, 20);
 			View layout = (View)findViewById(R.id.settings_layout);
 			layout.setPadding(leftRightPadding, padding,leftRightPadding, 0);
-		}*/
+		}
 		
 		getActionBar().setHomeButtonEnabled(true);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
