@@ -237,10 +237,6 @@ containing a value of this type.
     }
     public static final class style {
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -254,18 +250,25 @@ containing a value of this type.
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 19+ devices.
     
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
          */
-        public static final int AppBaseTheme=0x7f0b0000;
-        public static final int AppBaseTheme_ActionBar=0x7f0b0002;
-        public static final int AppBaseTheme_ActionBar_Overlay=0x7f0b0003;
+        public static final int AppBaseTheme=0x7f0b0005;
+        public static final int AppBaseTheme_ActionBar=0x7f0b0007;
+        public static final int AppBaseTheme_ActionBar_Overlay=0x7f0b0008;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0b0001;
-        public static final int SidebarButton=0x7f0b0007;
-        public static final int Widget_ActionBar=0x7f0b0004;
-        public static final int Widget_ActionBar_TitleTextStyle=0x7f0b0005;
-        public static final int Widget_ActionBar_Transparent=0x7f0b0006;
+        public static final int AppTheme=0x7f0b0006;
+        public static final int SidebarButton=0x7f0b000a;
+        public static final int Theme_TranslucentActionBar=0x7f0b0000;
+        public static final int Theme_TranslucentActionBar_ActionBar=0x7f0b0001;
+        public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f0b0002;
+        public static final int Widget_ActionBar=0x7f0b0003;
+        public static final int Widget_ActionBar_TitleTextStyle=0x7f0b0009;
+        public static final int Widget_ActionBar_Transparent=0x7f0b0004;
     }
     public static final class styleable {
         /** Attributes that can be used with a GoogleProgressBar.

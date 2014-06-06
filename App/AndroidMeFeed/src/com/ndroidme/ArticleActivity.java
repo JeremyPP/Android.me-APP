@@ -149,6 +149,7 @@ public class ArticleActivity extends Activity {
 			s = mArticle.getTitle();
 		}
 		setTitle(mArticle.getTitle());
+		
 		getActionBar().setHomeButtonEnabled(true);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setDisplayShowHomeEnabled(false);

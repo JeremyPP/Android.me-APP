@@ -305,7 +305,7 @@ public class MainActivity extends Activity {
 
 		getActionBar().setBackgroundDrawable(mActionBarBackgroundDrawable);
 
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+		/*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 			SystemBarTintManager tintManager = new SystemBarTintManager(this);
 			tintManager.setStatusBarTintEnabled(true);
 			// Holo light action bar color is #DDDDDD
@@ -317,7 +317,7 @@ public class MainActivity extends Activity {
 			padding = dpToPx(this, 70);
 			ListView view = (ListView)findViewById(R.id.main_left_drawer);
 			view.setPadding(0, padding, 0, 0);
-		}
+		}*/
 	}
     
 	@Override

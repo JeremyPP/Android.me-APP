@@ -20,7 +20,7 @@
 			    android:layout_height="wrap_content"
 			    android:adjustViewBounds="true"
 			    android:scaleType="centerCrop"
-			    android:paddingTop="25dp" />
+			    android:paddingTop="0dp" />
 	        <TextView
 		        android:id="@+id/article_tvTitle"
 		        android:layout_width="match_parent"
