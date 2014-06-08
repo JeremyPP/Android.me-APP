@@ -69,7 +69,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"
-        android:paddingTop="20dp"
+        android:paddingTop="50dp"
         android:divider="#c8c8c8"
         android:dividerHeight="0dp"
         android:background="#F7F7F7"/>

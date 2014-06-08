@@ -3,6 +3,7 @@ package com.ndroidme;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -43,7 +44,7 @@ public class MyDrawerAdapter extends ArrayAdapter<DrawerItem> {
 			//tvText.setTextSize(MainActivity.dpToPx(mContext, 8));
 			tvText.setTextColor(parent.getResources().getColor(R.color.drawer_gray));
 			//tvText.setTextAppearance(mContext, android.R.attr.textAppearanceListItemSmall);
-			layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15));
+			layout.setPadding(MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15));
 			tvText.setPadding(MainActivity.dpToPx(mContext, 10), 0, 0, 0);
 		} else {
 			imgIcon.setImageResource(R.drawable.ic_dummy);
@@ -51,21 +52,18 @@ public class MyDrawerAdapter extends ArrayAdapter<DrawerItem> {
 			layout.setBackgroundResource(R.drawable.drawer_button);
 			tvText.setText(mValues.get(position).getText());
 			tvText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 22);
-			if (position != 2) {
-				if (position == 0) {
-					layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 40), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 20));
-				} else {
-					layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 20), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 20));
-				}
-				
-			} else {
-				layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 20), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 40));
-			}
+			if(position == 2)
+				layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 30));
+			else
+				layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15));
 			//tvText.setTextAppearance(mContext, android.R.attr.textAppearanceListItem);
 		}
 		
 		if (mValues.get(position).isBold()) {
 			tvText.setTypeface(null, Typeface.BOLD);
+			
+		}else{
+			tvText.setTextColor(Color.GRAY);
 		}
 		
 		return rowView;
