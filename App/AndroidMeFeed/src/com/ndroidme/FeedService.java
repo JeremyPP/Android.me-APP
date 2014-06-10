@@ -9,6 +9,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Handler;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
@@ -66,36 +67,51 @@ public class FeedService extends Service {
     		mNotificationManager = null;
     	}
     }  
-
+    private void checkOperation(){
+    	try {
+			Article[] articles = mArticleManager.getArticles(0, null);
+			int numberOfRead = ArticlesRepository.sRepository.countRead(articles);
+			int numberOfUnread = articles.length - numberOfRead;
+			if (numberOfUnread > lastNumberOfUnread) {
+				removeNotification();
+			}
+			lastNumberOfUnread = numberOfUnread;
+			if (numberOfUnread > 0 && !sDontShow) {
+				addNotification(articles, numberOfUnread);
+			} else {
+				removeNotification();
+			}
+		} catch(Exception e) {
+			stopSelf();
+			e.printStackTrace();
+		}
+    }
     /**
      * Periodically check for new articles on feed
      */
     private void checkForNotifications() { 
-    	TimerTask timerTask = new TimerTask() {
+    	final Handler handler = new Handler();
+    	Runnable runnable = new Runnable() {
+    		   @Override
+    		   public void run() {
+    		      /* do what you need to do */
+    			   checkOperation();
+    		      /* and here comes the "trick" */
+    		      handler.postDelayed(this, FeedConfig.FM_SEARCH_INTERVAL);
+    		   }
+    		};
+    	handler.postDelayed(runnable, FeedConfig.FM_SEARCH_INTERVAL);
+    	
+    	
+    	
+    	/*TimerTask timerTask = new TimerTask() {
     		@Override
     		public void run() {
-    			try {
-    				Article[] articles = mArticleManager.getArticles(0, null);
-    				int numberOfRead = ArticlesRepository.sRepository.countRead(articles);
-    				int numberOfUnread = articles.length - numberOfRead;
-    				if (numberOfUnread > lastNumberOfUnread) {
-    					removeNotification();
-    				}
-    				lastNumberOfUnread = numberOfUnread;
-    				if (numberOfUnread > 0 && !sDontShow) {
-    					addNotification(articles, numberOfUnread);
-    				} else {
-    					removeNotification();
-    				}
-    			} catch(Exception e) {
-					stopSelf();
-    				e.fillInStackTrace();
-    			}
+    			checkOperation();
     		}
     	};
-    	
     	mTimer = new Timer(true);
-    	mTimer.scheduleAtFixedRate(timerTask, 0, FeedConfig.FM_SEARCH_INTERVAL);
+    	mTimer.scheduleAtFixedRate(timerTask, 0, FeedConfig.FM_SEARCH_INTERVAL);*/
     }
     
 	@Override
@@ -121,7 +137,7 @@ public class FeedService extends Service {
 	public void onDestroy() { 
 		super.onDestroy();
 		removeNotification();
-		mTimer.cancel();
+//		mTimer.cancel();
 		ArticlesRepository.sRepository.close();
 	}
 
