@@ -52,11 +52,8 @@ public class MyDrawerAdapter extends ArrayAdapter<DrawerItem> {
 			layout.setBackgroundResource(R.drawable.drawer_button);
 			tvText.setText(mValues.get(position).getText());
 			tvText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 22);
-			if(position == 2)
-				layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 30));
-			else
-				layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15));
-			//tvText.setTextAppearance(mContext, android.R.attr.textAppearanceListItem);
+			layout.setPadding(MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15), MainActivity.dpToPx(mContext, 10), MainActivity.dpToPx(mContext, 15));
+
 		}
 		
 		if (mValues.get(position).isBold()) {
