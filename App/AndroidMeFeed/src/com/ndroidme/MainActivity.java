@@ -256,23 +256,28 @@ public class MainActivity extends Activity {
 								ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
 								bar.setVisibility(ProgressBar.GONE);
 							} catch (Exception e) {
-								e.fillInStackTrace();
+								e.printStackTrace();
 							}
 						}
 					});
 				} catch(Exception e) {
-					setContentView(R.layout.activity_noconnection);
-					TextView tv = (TextView)findViewById(R.id.noconnection_tvRetry);
-					tv.setOnClickListener(new OnClickListener() {
-						
+					runOnUiThread(new Runnable() {
 						@Override
-						public void onClick(View v) {
-							Intent intent = getIntent();
-							finish();
-							startActivity(intent);
+						public void run() {
+							setContentView(R.layout.activity_noconnection);
+							TextView tv = (TextView)findViewById(R.id.noconnection_tvRetry);
+							tv.setOnClickListener(new OnClickListener() {
+								
+								@Override
+								public void onClick(View v) {
+									Intent intent = getIntent();
+									finish();
+									startActivity(intent);
+								}
+							});
 						}
 					});
-					e.fillInStackTrace();
+					e.printStackTrace();
 				}
 			}
 		}).start();
@@ -311,12 +316,6 @@ public class MainActivity extends Activity {
 			// Holo light action bar color is #DDDDDD
 			int actionBarColor = Color.parseColor("#6472CD");
 			tintManager.setStatusBarTintColor(actionBarColor);
-			int padding = dpToPx(this, 25);
-			View layout = (View)findViewById(R.id.main_right_layout);
-			layout.setPadding(0, padding, 0, 0);
-			padding = dpToPx(this, 50);
-			ListView view = (ListView)findViewById(R.id.main_left_drawer);
-			view.setPadding(0, padding, 0, 0);
 		}
 	}
     
@@ -337,7 +336,7 @@ public class MainActivity extends Activity {
 		SharedPreferences sharedPreferences = PreferenceManager
 				.getDefaultSharedPreferences(this);
 		boolean notificationsValue = sharedPreferences.getBoolean("Notifications_Value", false);
-		if (notificationsValue) {
+		if (notificationsValue && !isServiceRunning() ) {
 			Intent serviceIntent = new Intent(this, FeedService.class);
 			startService(serviceIntent);
 		} else {
