@@ -23,6 +23,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -41,12 +43,13 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity  {
 	
 	public static final String TAG = "com.ndroidme";
 	private List<Article> mArticles = new ArrayList<Article>();
 	private ListView mDrawerList;
 	private DrawerLayout mDrawerLayout;
+	private SwipeRefreshLayout mRefreshLayout;
     private ActionBarDrawerToggle mDrawerToggle;
     private StaggeredGridView mList;
     private ArrayAdapter<Article> mAdapter;
@@ -84,7 +87,7 @@ public class MainActivity extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view,
 		            int position, long id) {
 				RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_error);
-				if (layout.getVisibility() != LinearLayout.VISIBLE) {
+				if (layout==null||layout.getVisibility() != LinearLayout.VISIBLE) {
 					Intent itemIntent = new Intent(MainActivity.this, ArticleActivity.class);
 					itemIntent.putExtra("article", mArticles.get(position));
 					startActivity(itemIntent);
@@ -182,7 +185,21 @@ public class MainActivity extends Activity {
 		ArrayAdapter<DrawerItem> adapter = new MyDrawerAdapter(this, list);
 		mDrawerList.setAdapter(adapter);
 	}  
+	private void loadRefreshLayout()
+	{
+		mRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
+		mRefreshLayout.setColorScheme(R.color.swipe_color_1, R.color.swipe_color_2, R.color.swipe_color_3, R.color.swipe_color_4);
+		mRefreshLayout.setOnRefreshListener(new OnRefreshListener(){
+
+			@Override
+			public void onRefresh() {
+				// TODO Auto-generated method stub
+				
+				updateList();
+				
+			}});
 	
+	}
 	private void loadDrawerLayout() { 
 		mDrawerList = (ListView) findViewById(R.id.main_left_drawer);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.main_drawer_layout);
@@ -252,9 +269,11 @@ public class MainActivity extends Activity {
 						@Override
 						public void run() {
 							try {
+								
 								fillList();
-								ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
-								bar.setVisibility(ProgressBar.GONE);
+								//ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
+								//bar.setVisibility(ProgressBar.GONE);
+								mRefreshLayout.setRefreshing(false);
 							} catch (Exception e) {
 								e.printStackTrace();
 							}
@@ -299,12 +318,13 @@ public class MainActivity extends Activity {
  
 		new ArticlesRepository(MainActivity.this);
 		mIndex = 0;
+		loadRefreshLayout();
 		updateList();
 		FeedService.sDontShow = true;
-
+        
 		loadDrawerLayout();
 		fillDrawerLayout();
-
+        //loadRefreshLayout();
 		Drawable mActionBarBackgroundDrawable = getResources().getDrawable(R.drawable.ic_action_bar);
 		mActionBarBackgroundDrawable.setAlpha(255);
 
