@@ -28,6 +28,10 @@
 		        android:layout_alignParentBottom="true"
 		        android:layout_centerHorizontal="true"
 		        android:visibility="gone" />
+	        <android.support.v4.widget.SwipeRefreshLayout
+	            android:id="@+id/pull_to_refresh"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent">
 	        <com.etsy.android.grid.StaggeredGridView
 	            xmlns:app="http://schemas.android.com/apk/res-auto"
 	            android:id="@+id/main_listView"
@@ -38,6 +42,7 @@
 	            app:grid_paddingLeft="-15dp"
 	            app:grid_paddingRight="-15dp"
 	            app:item_margin="12dp" />
+	        </android.support.v4.widget.SwipeRefreshLayout>
 	        <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
 		        android:id="@+id/main_loading"
 		        gpb:type="folding_circles"
