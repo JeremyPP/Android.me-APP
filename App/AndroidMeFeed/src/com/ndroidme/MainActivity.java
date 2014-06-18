@@ -87,7 +87,7 @@ public class MainActivity extends Activity  {
 			public void onItemClick(AdapterView<?> parent, View view,
 		            int position, long id) {
 				RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_error);
-				if (layout==null||layout.getVisibility() != LinearLayout.VISIBLE) {
+				if (layout.getVisibility() != LinearLayout.VISIBLE) {
 					Intent itemIntent = new Intent(MainActivity.this, ArticleActivity.class);
 					itemIntent.putExtra("article", mArticles.get(position));
 					startActivity(itemIntent);
@@ -198,6 +198,7 @@ public class MainActivity extends Activity  {
 				updateList();
 				
 			}});
+		mRefreshLayout.setRefreshing(true);
 	
 	}
 	private void loadDrawerLayout() { 
@@ -320,6 +321,7 @@ public class MainActivity extends Activity  {
 		mIndex = 0;
 		loadRefreshLayout();
 		updateList();
+		
 		FeedService.sDontShow = true;
         
 		loadDrawerLayout();
