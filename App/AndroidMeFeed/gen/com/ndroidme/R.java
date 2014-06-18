@@ -106,10 +106,14 @@ containing a value of this type.
     }
     public static final class color {
         public static final int blue=0x7f050001;
-        public static final int drawer_gray=0x7f050004;
-        public static final int drawer_purple=0x7f050005;
+        public static final int drawer_gray=0x7f050008;
+        public static final int drawer_purple=0x7f050009;
         public static final int green=0x7f050003;
         public static final int red=0x7f050000;
+        public static final int swipe_color_1=0x7f050004;
+        public static final int swipe_color_2=0x7f050005;
+        public static final int swipe_color_3=0x7f050006;
+        public static final int swipe_color_4=0x7f050007;
         public static final int yellow=0x7f050002;
     }
     public static final class dimen {
@@ -150,7 +154,7 @@ containing a value of this type.
         public static final int staggered=0x7f020016;
     }
     public static final class id {
-        public static final int action_likes=0x7f040023;
+        public static final int action_likes=0x7f040024;
         public static final int article_imgPhoto=0x7f040002;
         public static final int article_loading=0x7f040008;
         public static final int article_scroll=0x7f040001;
@@ -159,33 +163,34 @@ containing a value of this type.
         public static final int article_tvTitle=0x7f040003;
         public static final int article_wvContent=0x7f040005;
         public static final int article_wvFrom=0x7f040007;
-        public static final int drawer_imgIcon=0x7f04001a;
-        public static final int drawer_layout=0x7f040019;
-        public static final int drawer_tvText=0x7f04001b;
+        public static final int drawer_imgIcon=0x7f04001b;
+        public static final int drawer_layout=0x7f04001a;
+        public static final int drawer_tvText=0x7f04001c;
         public static final int folding_circles=0x7f040000;
-        public static final int list_divider=0x7f040020;
-        public static final int list_imgPhoto=0x7f04001d;
-        public static final int list_loading=0x7f04001e;
-        public static final int list_tvComments=0x7f040022;
-        public static final int list_tvLikes=0x7f040021;
-        public static final int list_tvResume=0x7f04001f;
-        public static final int list_tvTitle=0x7f04001c;
+        public static final int list_divider=0x7f040021;
+        public static final int list_imgPhoto=0x7f04001e;
+        public static final int list_loading=0x7f04001f;
+        public static final int list_tvComments=0x7f040023;
+        public static final int list_tvLikes=0x7f040022;
+        public static final int list_tvResume=0x7f040020;
+        public static final int list_tvTitle=0x7f04001d;
         public static final int main_drawer_layout=0x7f040009;
-        public static final int main_error=0x7f04000f;
-        public static final int main_left_drawer=0x7f040010;
-        public static final int main_listView=0x7f04000d;
-        public static final int main_loading=0x7f04000e;
+        public static final int main_error=0x7f040010;
+        public static final int main_left_drawer=0x7f040011;
+        public static final int main_listView=0x7f04000e;
+        public static final int main_loading=0x7f04000f;
         public static final int main_loading_list=0x7f04000c;
         public static final int main_right_layout=0x7f04000a;
         public static final int main_right_layout1=0x7f04000b;
-        public static final int noconnection_imgCloud=0x7f040011;
-        public static final int noconnection_tvLoad=0x7f040012;
-        public static final int noconnection_tvRetry=0x7f040013;
-        public static final int settings_cbCache=0x7f040018;
-        public static final int settings_cbNotifications=0x7f040016;
-        public static final int settings_layout=0x7f040014;
-        public static final int settings_tvCache=0x7f040017;
-        public static final int settings_tvNotifications=0x7f040015;
+        public static final int noconnection_imgCloud=0x7f040012;
+        public static final int noconnection_tvLoad=0x7f040013;
+        public static final int noconnection_tvRetry=0x7f040014;
+        public static final int pull_to_refresh=0x7f04000d;
+        public static final int settings_cbCache=0x7f040019;
+        public static final int settings_cbNotifications=0x7f040017;
+        public static final int settings_layout=0x7f040015;
+        public static final int settings_tvCache=0x7f040018;
+        public static final int settings_tvNotifications=0x7f040016;
     }
     public static final class integer {
         public static final int default_type=0x7f070000;
@@ -266,6 +271,8 @@ containing a value of this type.
         public static final int Theme_TranslucentActionBar=0x7f0b0000;
         public static final int Theme_TranslucentActionBar_ActionBar=0x7f0b0001;
         public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f0b0002;
+        /**  <item name="android:background">@drawable/ab_background</item> 
+         */
         public static final int Widget_ActionBar=0x7f0b0003;
         public static final int Widget_ActionBar_TitleTextStyle=0x7f0b0009;
         public static final int Widget_ActionBar_Transparent=0x7f0b0004;

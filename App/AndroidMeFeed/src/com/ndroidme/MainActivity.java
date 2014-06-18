@@ -198,7 +198,7 @@ public class MainActivity extends Activity  {
 				updateList();
 				
 			}});
-		mRefreshLayout.setRefreshing(true);
+		//mRefreshLayout.setRefreshing(true);
 	
 	}
 	private void loadDrawerLayout() { 
@@ -272,9 +272,9 @@ public class MainActivity extends Activity  {
 							try {
 								
 								fillList();
-								//ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
-								//bar.setVisibility(ProgressBar.GONE);
-								mRefreshLayout.setRefreshing(false);
+								ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
+								bar.setVisibility(ProgressBar.GONE);
+								//mRefreshLayout.setRefreshing(false);
 							} catch (Exception e) {
 								e.printStackTrace();
 							}
