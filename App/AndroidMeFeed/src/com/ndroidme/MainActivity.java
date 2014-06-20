@@ -194,7 +194,7 @@ public class MainActivity extends Activity  {
 			@Override
 			public void onRefresh() {
 				// TODO Auto-generated method stub
-				mRefreshLayout.setRefreshing(false);
+				//mRefreshLayout.setRefreshing(false);
 				updateList();
 				
 			}});
@@ -274,7 +274,7 @@ public class MainActivity extends Activity  {
 								fillList();
 								ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
 								bar.setVisibility(ProgressBar.GONE);
-								//mRefreshLayout.setRefreshing(false);
+								mRefreshLayout.setRefreshing(false);
 							} catch (Exception e) {
 								e.printStackTrace();
 							}
