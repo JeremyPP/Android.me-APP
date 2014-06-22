@@ -2,6 +2,9 @@ package com.ndroidme;
 
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -29,7 +32,16 @@ public class FeedService extends Service {
 	private NotificationCompat.Builder mBuilder;
 	private NotificationManager mNotificationManager;
 	private ArticleManager mArticleManager;
-	private Timer mTimer;
+	private ScheduledThreadPoolExecutor mTimer;
+	private Runnable mCheckForNotifications = new Runnable() {
+
+		@Override
+		public void run() {
+			checkOperation();
+			
+		}
+    	
+    };
 	private int lastNumberOfUnread = 0;
 	
 	/**
@@ -89,6 +101,7 @@ public class FeedService extends Service {
     /**
      * Periodically check for new articles on feed
      */
+    
     private void checkForNotifications() { 
     	final Handler handler = new Handler();
     	Runnable runnable = new Runnable() {
@@ -123,7 +136,9 @@ public class FeedService extends Service {
 		if (notificationsValue) {
 			new ArticlesRepository(this);
 			mArticleManager = new ArticleManager(FeedConfig.FM_URL);
-			checkForNotifications();
+			mTimer= new ScheduledThreadPoolExecutor(2);
+			mTimer.scheduleAtFixedRate(mCheckForNotifications, 0,FeedConfig.FM_SEARCH_INTERVAL, TimeUnit.MILLISECONDS);
+			
 		}
 	}
 	

@@ -13,6 +13,84 @@ import android.os.Parcelable;
  */
 public class Article implements Parcelable {
 	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((mContent == null) ? 0 : mContent.hashCode());
+		result = prime * result + mCountComments;
+		result = prime * result + mCountLikes;
+		result = prime * result + ((mDate == null) ? 0 : mDate.hashCode());
+		result = prime * result + ((mFrom == null) ? 0 : mFrom.hashCode());
+		result = prime * result + mId;
+		result = prime * result
+				+ ((mPhotoUrl == null) ? 0 : mPhotoUrl.hashCode());
+		result = prime * result + ((mResume == null) ? 0 : mResume.hashCode());
+		result = prime * result + ((mTags == null) ? 0 : mTags.hashCode());
+		result = prime * result + ((mTitle == null) ? 0 : mTitle.hashCode());
+		result = prime * result + ((mWriter == null) ? 0 : mWriter.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Article other = (Article) obj;
+		if (mContent == null) {
+			if (other.mContent != null)
+				return false;
+		} else if (!mContent.equals(other.mContent))
+			return false;
+		if (mCountComments != other.mCountComments)
+			return false;
+		if (mCountLikes != other.mCountLikes)
+			return false;
+		if (mDate == null) {
+			if (other.mDate != null)
+				return false;
+		} else if (!mDate.equals(other.mDate))
+			return false;
+		if (mFrom == null) {
+			if (other.mFrom != null)
+				return false;
+		} else if (!mFrom.equals(other.mFrom))
+			return false;
+		if (mId != other.mId)
+			return false;
+		if (mPhotoUrl == null) {
+			if (other.mPhotoUrl != null)
+				return false;
+		} else if (!mPhotoUrl.equals(other.mPhotoUrl))
+			return false;
+		if (mResume == null) {
+			if (other.mResume != null)
+				return false;
+		} else if (!mResume.equals(other.mResume))
+			return false;
+		if (mTags == null) {
+			if (other.mTags != null)
+				return false;
+		} else if (!mTags.equals(other.mTags))
+			return false;
+		if (mTitle == null) {
+			if (other.mTitle != null)
+				return false;
+		} else if (!mTitle.equals(other.mTitle))
+			return false;
+		if (mWriter == null) {
+			if (other.mWriter != null)
+				return false;
+		} else if (!mWriter.equals(other.mWriter))
+			return false;
+		return true;
+	}
+
 	private List<String> mFrom, mTags;
 	private String mTitle, mResume, mContent, mDate, mWriter, mPhotoUrl;
 	private int mId, mCountLikes, mCountComments;

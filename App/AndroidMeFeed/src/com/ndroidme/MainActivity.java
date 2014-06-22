@@ -67,8 +67,18 @@ public class MainActivity extends Activity  {
 	    int px = Math.round(dp * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));       
 	    return px;
 	}
-	
-	private void fillList() throws Exception { 
+	private void addToArticleList(int start) throws Exception
+	{
+		Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(start, null);
+		for (Article article : articles) {
+			if (!mArticles.contains(article))
+			{
+				mArticles.add(article);
+			}
+		}
+		
+	}
+	private void setUpList() { 
 		mList = (StaggeredGridView)findViewById(R.id.main_listView);
 		if (isTablet(this)) {
 			mList.setColumnCount(2);
@@ -114,11 +124,12 @@ public class MainActivity extends Activity  {
 							@Override
 							public void run() {
 								try {
-									Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(mIndex * 10, null);
+									/*Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(mIndex * 10, null);
 									for (Article article : articles) {
 										if (!mArticles.contains(article)) 
-											mArticles.add(article);
-									}
+											mArticles.add(article);*/
+									addToArticleList(mIndex*10);
+									
 									runOnUiThread(new Runnable() {
 										
 										@Override
@@ -262,16 +273,18 @@ public class MainActivity extends Activity  {
 			@Override
 			public void run() {
 				try {
-					Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(0, null);
-					for (Article article : articles) {
-						mArticles.add(article);
-					}
+//					Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(0, null);
+//					for (Article article : articles) {
+//						mArticles.add(article);
+//					}
+					addToArticleList(0);
 					runOnUiThread(new Runnable() {
 						@Override
 						public void run() {
 							try {
 								
-								fillList();
+								//setUpList();
+								mAdapter.notifyDataSetChanged();
 								ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
 								bar.setVisibility(ProgressBar.GONE);
 								mRefreshLayout.setRefreshing(false);
@@ -320,6 +333,7 @@ public class MainActivity extends Activity  {
 		new ArticlesRepository(MainActivity.this);
 		mIndex = 0;
 		loadRefreshLayout();
+		setUpList();
 		updateList();
 		
 		FeedService.sDontShow = true;
