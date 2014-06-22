@@ -147,7 +147,7 @@ public class ArticleManager {
 		List<Article> list = new LinkedList<Article>();
 		String url;
 		if (tags == null) {
-			url = String.format(mUrl + "limit=10&skip=%d", startingIndex);
+			url = String.format(mUrl + "limit=9&skip=%d", startingIndex);
 		} else {
 			url = String.format(mUrl + "limit=20&skip=%d&tags=%s", startingIndex, getTags(tags));
 		}

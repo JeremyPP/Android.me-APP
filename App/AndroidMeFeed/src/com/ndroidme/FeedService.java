@@ -137,7 +137,7 @@ public class FeedService extends Service {
 			new ArticlesRepository(this);
 			mArticleManager = new ArticleManager(FeedConfig.FM_URL);
 			mTimer= new ScheduledThreadPoolExecutor(2);
-			mTimer.scheduleAtFixedRate(mCheckForNotifications, 0,FeedConfig.FM_SEARCH_INTERVAL, TimeUnit.MILLISECONDS);
+			mTimer.scheduleAtFixedRate(mCheckForNotifications, FeedConfig.FM_SEARCH_DELAY,FeedConfig.FM_SEARCH_INTERVAL, TimeUnit.MILLISECONDS);
 			
 		}
 	}

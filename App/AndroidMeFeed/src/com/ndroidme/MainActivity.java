@@ -54,8 +54,10 @@ public class MainActivity extends Activity  {
     private StaggeredGridView mList;
     private ArrayAdapter<Article> mAdapter;
     private int mIndex;
-    private boolean mHasRequestedMore;
-	
+    private boolean mFirstRun;
+    private ArticlesRepository mArticleRepository;
+	private ArticleManager mArticleManager=new ArticleManager(FeedConfig.FM_URL);
+	private boolean mHasRequestedMore;
     public static boolean isTablet(Context context) {
         return (context.getResources().getConfiguration().screenLayout
                 & Configuration.SCREENLAYOUT_SIZE_MASK)
@@ -69,7 +71,7 @@ public class MainActivity extends Activity  {
 	}
 	private void addToArticleList(int start) throws Exception
 	{
-		Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(start, null);
+		Article[] articles = mArticleManager.getArticles(start, null);
 		for (Article article : articles) {
 			if (!mArticles.contains(article))
 			{
@@ -86,6 +88,7 @@ public class MainActivity extends Activity  {
 		} else {
 			mList.setColumnCountLandscape(2);
 		}
+		
 		mAdapter = new MyListAdapter(this, mArticles);
 		final View footer = ((LayoutInflater)MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                 .inflate(R.layout.progress_bar, null, false);
@@ -115,7 +118,7 @@ public class MainActivity extends Activity  {
 				final int lastInScreen = firstVisibleItem + visibleItemCount;
 				if (lastInScreen >= totalItemCount) {
 					if (!mHasRequestedMore) {
-						mIndex++;
+						
 						mHasRequestedMore = true;
 						footer.setVisibility(View.VISIBLE);
 						
@@ -123,13 +126,18 @@ public class MainActivity extends Activity  {
 							 
 							@Override
 							public void run() {
-								try {
-									/*Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(mIndex * 10, null);
-									for (Article article : articles) {
-										if (!mArticles.contains(article)) 
-											mArticles.add(article);*/
-									addToArticleList(mIndex*10);
-									
+								try
+								{
+									if(mFirstRun==false)
+									{
+										mIndex++;
+									  addToArticleList(mIndex*9);
+									}
+									else
+									{
+										addToArticleList(0);
+										
+									}
 									runOnUiThread(new Runnable() {
 										
 										@Override
@@ -137,7 +145,12 @@ public class MainActivity extends Activity  {
 											try {
 												mAdapter.notifyDataSetChanged();
 												mHasRequestedMore = false;
-												
+												if(mFirstRun==true)
+												{
+												  ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
+												  bar.setVisibility(ProgressBar.GONE);
+												  mFirstRun=false;
+												}
 												RelativeLayout layout = (RelativeLayout)findViewById(R.id.main_error);
 												layout.setVisibility(LinearLayout.INVISIBLE);
 											} catch (Exception e) {
@@ -165,7 +178,8 @@ public class MainActivity extends Activity  {
 				}
 			}
 		});
-		mHasRequestedMore = false;
+		mFirstRun = true;
+		mHasRequestedMore=false;
 	}
 
     public boolean isServiceRunning() {
@@ -273,7 +287,7 @@ public class MainActivity extends Activity  {
 			@Override
 			public void run() {
 				try {
-//					Article[] articles = new ArticleManager(FeedConfig.FM_URL).getArticles(0, null);
+//					Article[] articles = mArticleManager.getArticles(0, null);
 //					for (Article article : articles) {
 //						mArticles.add(article);
 //					}
@@ -285,8 +299,7 @@ public class MainActivity extends Activity  {
 								
 								//setUpList();
 								mAdapter.notifyDataSetChanged();
-								ProgressBar bar = (ProgressBar)findViewById(R.id.main_loading);
-								bar.setVisibility(ProgressBar.GONE);
+								
 								mRefreshLayout.setRefreshing(false);
 							} catch (Exception e) {
 								e.printStackTrace();
@@ -304,7 +317,7 @@ public class MainActivity extends Activity  {
 								@Override
 								public void onClick(View v) {
 									Intent intent = getIntent();
-									finish();
+									//finish();
 									startActivity(intent);
 								}
 							});
@@ -330,11 +343,11 @@ public class MainActivity extends Activity  {
 			savePreferences("Cache_Value", false);
 		}
  
-		new ArticlesRepository(MainActivity.this);
+		mArticleRepository=new ArticlesRepository(MainActivity.this);
 		mIndex = 0;
 		loadRefreshLayout();
 		setUpList();
-		updateList();
+		//updateList();
 		
 		FeedService.sDontShow = true;
         
@@ -359,7 +372,10 @@ public class MainActivity extends Activity  {
 	protected void onResume() { 
 		super.onResume();
 
-		new ArticlesRepository(this);
+		if(mArticleRepository==null)
+		{
+			mArticleRepository= new ArticlesRepository(this);
+		}
 		//update the list of read articles
 //		try {
 //			if (mArticles != null)
@@ -425,7 +441,7 @@ public class MainActivity extends Activity  {
 	@Override
 	protected void onDestroy() { 
 		super.onDestroy();
-		new ArticlesRepository(this);
+		//new ArticlesRepository(this);
 		//mark all articles as unread when leave the main activity
 		if (ArticlesRepository.sRepository != null && mArticles != null) {
 			Set<Integer> repository = ArticlesRepository.sRepository.getRepository();

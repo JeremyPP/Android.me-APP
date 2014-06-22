@@ -33,7 +33,7 @@ public class ArticleActivity extends Activity {
 	private ImageView imgPhoto;
 	private WebView wvContent;
 	private Drawable mActionBarBackgroundDrawable;
-	
+	private ArticlesRepository mArticleRepository;
 	private class GetMoreInfo extends AsyncTask<String, Void, Void> {
 		Article article;
 
@@ -115,7 +115,7 @@ public class ArticleActivity extends Activity {
 		wvFrom = (TextView)findViewById(R.id.article_wvFrom);
 		wvContent = (WebView)findViewById(R.id.article_wvContent);
 		imgPhoto = (ImageView)findViewById(R.id.article_imgPhoto);
-		
+		mArticleRepository=new ArticlesRepository(this);
 		Article article = ArticlesRepository.sRepository.getLoadedArticle(mArticle.getId());
 		if (article != null) {
 			mArticle = article;
