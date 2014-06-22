@@ -2,10 +2,14 @@
 <resources>
    
  
-    <color name="swipe_color_1">#B6DB49</color>
+    <!-- <color name="swipe_color_1">#B6DB49</color>
     <color name="swipe_color_2">#99CC00</color>
     <color name="swipe_color_3">#8ABD00</color>
-    <color name="swipe_color_4">#7CAF00</color>
+    <color name="swipe_color_4">#7CAF00</color> -->
+    <color name="swipe_color_1">#e91e63</color>
+    <color name="swipe_color_2">#00b0ff</color>
+    <color name="swipe_color_3">#303f9f</color>
+    <color name="swipe_color_4">#7986cb</color>
  
 
     
