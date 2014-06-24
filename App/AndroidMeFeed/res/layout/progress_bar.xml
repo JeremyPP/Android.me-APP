@@ -6,7 +6,8 @@
         android:gravity="center"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:baselineAligned="true">
+        android:baselineAligned="true"
+        >
     <ProgressBar
             android:layout_marginRight="8dp"
             android:layout_height="20dp"

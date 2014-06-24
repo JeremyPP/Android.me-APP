@@ -102,14 +102,14 @@ public class FeedService extends Service {
      * Periodically check for new articles on feed
      */
     
-    private void checkForNotifications() { 
+    /*private void checkForNotifications() { 
     	final Handler handler = new Handler();
     	Runnable runnable = new Runnable() {
     		   @Override
     		   public void run() {
-    		      /* do what you need to do */
+    		       do what you need to do 
     			   checkOperation();
-    		      /* and here comes the "trick" */
+    		       and here comes the "trick" 
     		      handler.postDelayed(this, FeedConfig.FM_SEARCH_INTERVAL);
     		   }
     		};
@@ -117,15 +117,15 @@ public class FeedService extends Service {
     	
     	
     	
-    	/*TimerTask timerTask = new TimerTask() {
+    	TimerTask timerTask = new TimerTask() {
     		@Override
     		public void run() {
     			checkOperation();
     		}
     	};
     	mTimer = new Timer(true);
-    	mTimer.scheduleAtFixedRate(timerTask, 0, FeedConfig.FM_SEARCH_INTERVAL);*/
-    }
+    	mTimer.scheduleAtFixedRate(timerTask, 0, FeedConfig.FM_SEARCH_INTERVAL);
+    }*/
     
 	@Override
 	public void onCreate() {

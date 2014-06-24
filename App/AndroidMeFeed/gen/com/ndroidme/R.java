@@ -110,6 +110,11 @@ containing a value of this type.
         public static final int drawer_purple=0x7f050009;
         public static final int green=0x7f050003;
         public static final int red=0x7f050000;
+        /**  <color name="swipe_color_1">#B6DB49</color>
+    <color name="swipe_color_2">#99CC00</color>
+    <color name="swipe_color_3">#8ABD00</color>
+    <color name="swipe_color_4">#7CAF00</color> 
+         */
         public static final int swipe_color_1=0x7f050004;
         public static final int swipe_color_2=0x7f050005;
         public static final int swipe_color_3=0x7f050006;

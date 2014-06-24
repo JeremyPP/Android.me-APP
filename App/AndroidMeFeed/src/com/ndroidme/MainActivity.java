@@ -120,8 +120,9 @@ public class MainActivity extends Activity  {
 					if (!mHasRequestedMore) {
 						
 						mHasRequestedMore = true;
-						footer.setVisibility(View.VISIBLE);
-						
+						if(mFirstRun==false){
+						  footer.setVisibility(View.VISIBLE);
+						}
 						new Thread(new Runnable() {
 							 
 							@Override
@@ -223,7 +224,7 @@ public class MainActivity extends Activity  {
 				updateList();
 				
 			}});
-		//mRefreshLayout.setRefreshing(true);
+		
 	
 	}
 	private void loadDrawerLayout() { 
@@ -317,7 +318,6 @@ public class MainActivity extends Activity  {
 								@Override
 								public void onClick(View v) {
 									Intent intent = getIntent();
-									//finish();
 									startActivity(intent);
 								}
 							});
