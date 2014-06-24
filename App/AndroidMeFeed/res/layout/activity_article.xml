@@ -31,12 +31,12 @@
 		        android:paddingRight="15dp" />
 		    <TextView
 		        android:id="@+id/article_tvDate"
-		        android:layout_width="wrap_content"
+		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
-		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
 		        android:paddingTop="10dp"
 		        android:paddingLeft="15dp"
-		        android:paddingRight="15dp" 
+		        android:paddingRight="15dp"
 		        android:textColor="#7878c8" />
 		    <WebView
 		        android:id="@+id/article_wvContent"
