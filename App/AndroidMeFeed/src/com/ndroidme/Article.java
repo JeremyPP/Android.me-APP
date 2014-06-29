@@ -13,6 +13,9 @@ import android.os.Parcelable;
  */
 public class Article implements Parcelable {
 	
+	private static final String DIV_END = "</div>";
+	private static final String DIV_STYLE = "<div style=\"text-align:justify;\">";
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -94,10 +97,10 @@ public class Article implements Parcelable {
 	private List<String> mFrom, mTags;
 	private String mTitle, mResume, mContent, mDate, mWriter, mPhotoUrl;
 	private int mId, mCountLikes, mCountComments;
-	public static String DOCTYPE="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">";
-	public static String HEAD="<html><head><title></title></head><body>";
-	public static String END="</body></html>";
-	public static String DATAURL="data:text/html; charset=UTF8,";
+	private static String DOCTYPE="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">";
+	private static String HEAD="<html><head><title></title></head><body>";
+	private static String END="</body></html>";
+	private static String DATAURL="data:text/html; charset=UTF8,";
 	public static final Parcelable.Creator<Article> CREATOR =
 			new Parcelable.Creator<Article>(){
 
@@ -219,6 +222,11 @@ public class Article implements Parcelable {
 
 	public String getContent() {
 		return mContent;
+	}
+	
+	public String getContentUrl()
+	{
+		return DATAURL+DOCTYPE+HEAD+DIV_STYLE + mContent + DIV_END+END;
 	}
 
 	public void setContent(String content) {

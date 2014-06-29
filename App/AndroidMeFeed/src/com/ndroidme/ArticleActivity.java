@@ -80,7 +80,7 @@ public class ArticleActivity extends Activity {
 		String writer = (getText(R.string.article_writer) + " " + "<b>" + mArticle.getWriter() + "</b>").toUpperCase();
 		String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
 		tvDate.setText(Html.fromHtml(writer + " | " + date));
-		wvContent.loadUrl(Article.DATAURL+Article.DOCTYPE+Article.HEAD+"<div style=\"text-align:justify;\">" + mArticle.getContent() + "</div>"+Article.END); 
+		wvContent.loadUrl(mArticle.getContentUrl()); 
 		wvFrom.setText(mArticle.getFrom().get(0));
 		wvFrom.setOnClickListener(new View.OnClickListener() {
 			
