@@ -94,8 +94,10 @@ public class Article implements Parcelable {
 	private List<String> mFrom, mTags;
 	private String mTitle, mResume, mContent, mDate, mWriter, mPhotoUrl;
 	private int mId, mCountLikes, mCountComments;
-	
-	
+	public static String DOCTYPE="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">";
+	public static String HEAD="<html><head><title></title></head><body>";
+	public static String END="</body></html>";
+	public static String DATAURL="data:text/html; charset=UTF8,";
 	public static final Parcelable.Creator<Article> CREATOR =
 			new Parcelable.Creator<Article>(){
 
