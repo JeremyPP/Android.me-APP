@@ -108,7 +108,8 @@ public class ArticleActivity extends Activity {
 		if (mArticle == null) {
 			finish();
 		}
-		mShareActionProvider = new ShareActionProvider(this);
+		//mShareActionProvider = new ShareActionProvider(this);
+		//mShareActionProvider.
 		
 		tvTitle = (TextView)findViewById(R.id.article_tvTitle);
 		tvDate = (TextView)findViewById(R.id.article_tvDate);
@@ -179,9 +180,9 @@ public class ArticleActivity extends Activity {
 		item.setTitle(String.valueOf(mArticle.getCountLikes()));
 		//item.setShowAsAction(MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 		 MenuItem shareItem = menu.findItem(R.id.menu_share);
-		 mShareActionProvider.setShareIntent(getDefaultIntent()); 
-	     shareItem.setActionProvider(mShareActionProvider);
-
+		
+	     mShareActionProvider=(ShareActionProvider)shareItem.getActionProvider();
+	     mShareActionProvider.setShareIntent(getDefaultIntent()); 
 		 //MenuItemCompat.setActionProvider(shareItem, mShareActionProvider);
         // Fetch and store ShareActionProvider
         
@@ -208,7 +209,11 @@ public class ArticleActivity extends Activity {
 	        case android.R.id.home:
 	            onBackPressed();
 	            return true;
-	        
+	        case R.id.action_view_in_browser:
+	        	Intent intent= new Intent(Intent.ACTION_VIEW);
+	            intent.setData(Uri.parse(mArticle.getArticleUrl()));
+	            startActivity(intent);
+	            return true;
 	        	
 	        	
 	        }

@@ -12,5 +12,6 @@
         android:showAsAction="withText"
         android:actionProviderClass="@string/share_provider"
         android:enabled="true" android:visible="true"/>
+    <item android:id="@+id/action_view_in_browser" android:showAsAction="withText" android:title="@string/view_in_browser"></item>
 
 </menu>

@@ -160,6 +160,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int action_likes=0x7f040024;
+        public static final int action_view_in_browser=0x7f040026;
         public static final int article_imgPhoto=0x7f040002;
         public static final int article_loading=0x7f040008;
         public static final int article_scroll=0x7f040001;
@@ -247,6 +248,7 @@ containing a value of this type.
         public static final int share=0x7f0a001e;
         public static final int share_provider=0x7f0a001f;
         public static final int site_name=0x7f0a0000;
+        public static final int view_in_browser=0x7f0a0020;
     }
     public static final class style {
         /** 

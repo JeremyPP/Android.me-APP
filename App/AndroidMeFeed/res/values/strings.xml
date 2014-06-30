@@ -34,6 +34,7 @@
 	<color name="drawer_gray">#8F8F8F</color>
 	<color name="drawer_purple">#6472CD</color>
 	<string name="share">Share</string>
-	<string name="share_provider">ShareActionProvider</string>
+	<string name="share_provider">android.widget.ShareActionProvider</string>
+	<string name="view_in_browser">View in browser</string>
 
 </resources>
