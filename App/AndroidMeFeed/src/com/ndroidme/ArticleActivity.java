@@ -1,13 +1,7 @@
 package com.ndroidme;
 
-import java.io.InputStream;
-
-import com.nostra13.universalimageloader.core.ImageLoader;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -15,6 +9,9 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
+//import android.support.v4.view.MenuCompat;
+//import android.support.v4.view.MenuItemCompat;
+import android.widget.ShareActionProvider;
 import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
@@ -26,6 +23,8 @@ import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+
 public class ArticleActivity extends Activity {
 
 	private Article mArticle;
@@ -34,6 +33,7 @@ public class ArticleActivity extends Activity {
 	private WebView wvContent;
 	private Drawable mActionBarBackgroundDrawable;
 	private ArticlesRepository mArticleRepository;
+	private ShareActionProvider mShareActionProvider;
 	private class GetMoreInfo extends AsyncTask<String, Void, Void> {
 		Article article;
 
@@ -108,6 +108,7 @@ public class ArticleActivity extends Activity {
 		if (mArticle == null) {
 			finish();
 		}
+		mShareActionProvider = new ShareActionProvider(this);
 		
 		tvTitle = (TextView)findViewById(R.id.article_tvTitle);
 		tvDate = (TextView)findViewById(R.id.article_tvDate);
@@ -167,6 +168,7 @@ public class ArticleActivity extends Activity {
             mActionBarBackgroundDrawable.setAlpha(newAlpha);
         }
     };
+	
     
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -176,17 +178,39 @@ public class ArticleActivity extends Activity {
 		MenuItem item = menu.findItem(R.id.action_likes);
 		item.setTitle(String.valueOf(mArticle.getCountLikes()));
 		//item.setShowAsAction(MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-		
+		 MenuItem shareItem = menu.findItem(R.id.menu_share);
+		 mShareActionProvider.setShareIntent(getDefaultIntent()); 
+	     shareItem.setActionProvider(mShareActionProvider);
+
+		 //MenuItemCompat.setActionProvider(shareItem, mShareActionProvider);
+        // Fetch and store ShareActionProvider
+        
 		
 		return true;
 	}
-	
+	public void doShare(Intent shareIntent) {
+	      // When you want to share set the share intent.
+	    shareIntent= new Intent(Intent.ACTION_SEND);
+    	shareIntent.setType("text/plain");
+    	shareIntent.putExtra(Intent.EXTRA_TEXT,mArticle.getArticleUrl());
+	    mShareActionProvider.setShareIntent(shareIntent);
+	  }
+	Intent getDefaultIntent()
+	{
+		Intent intent= new Intent(Intent.ACTION_SEND);
+		intent.setType("text/plain");
+		intent.putExtra(Intent.EXTRA_TEXT,mArticle.getArticleUrl());
+		return intent;
+	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	        switch (item.getItemId()) {
 	        case android.R.id.home:
 	            onBackPressed();
 	            return true;
+	        
+	        	
+	        	
 	        }
 	    return super.onOptionsItemSelected(item);
 	}

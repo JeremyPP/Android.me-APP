@@ -187,6 +187,7 @@ containing a value of this type.
         public static final int main_loading_list=0x7f04000c;
         public static final int main_right_layout=0x7f04000a;
         public static final int main_right_layout1=0x7f04000b;
+        public static final int menu_share=0x7f040025;
         public static final int noconnection_imgCloud=0x7f040012;
         public static final int noconnection_tvLoad=0x7f040013;
         public static final int noconnection_tvRetry=0x7f040014;
@@ -243,6 +244,8 @@ containing a value of this type.
         public static final int settings_general=0x7f0a0011;
         public static final int settings_notifications=0x7f0a0013;
         public static final int settings_notifications_description=0x7f0a0014;
+        public static final int share=0x7f0a001e;
+        public static final int share_provider=0x7f0a001f;
         public static final int site_name=0x7f0a0000;
     }
     public static final class style {
@@ -260,26 +263,14 @@ containing a value of this type.
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 19+ devices.
     
-
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
          */
         public static final int AppBaseTheme=0x7f0b0005;
-        public static final int AppBaseTheme_ActionBar=0x7f0b0007;
-        public static final int AppBaseTheme_ActionBar_Overlay=0x7f0b0008;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f0b0006;
-        public static final int SidebarButton=0x7f0b000a;
         public static final int Theme_TranslucentActionBar=0x7f0b0000;
         public static final int Theme_TranslucentActionBar_ActionBar=0x7f0b0001;
         public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f0b0002;
         /**  <item name="android:background">@drawable/ab_background</item> 
          */
         public static final int Widget_ActionBar=0x7f0b0003;
-        public static final int Widget_ActionBar_TitleTextStyle=0x7f0b0009;
         public static final int Widget_ActionBar_Transparent=0x7f0b0004;
     }
     public static final class styleable {

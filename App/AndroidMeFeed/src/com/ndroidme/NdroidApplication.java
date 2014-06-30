@@ -1,4 +1,4 @@
-package com.ndroidme.core;
+package com.ndroidme;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;

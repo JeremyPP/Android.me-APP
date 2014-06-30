@@ -33,5 +33,7 @@
 	<string name="drawer_close">Click here to close the sidebar</string>
 	<color name="drawer_gray">#8F8F8F</color>
 	<color name="drawer_purple">#6472CD</color>
+	<string name="share">Share</string>
+	<string name="share_provider">ShareActionProvider</string>
 
 </resources>

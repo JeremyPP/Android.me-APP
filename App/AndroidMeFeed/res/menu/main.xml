@@ -1,17 +1,16 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nme="http://schemas.android.com/apk/res-auto" >
 
-    <!-- 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
-      -->
-     
-	<item android:id="@+id/action_likes"
-	      android:title="0"
-          android:icon="@drawable/ic_action_good"
-          android:showAsAction="always|withText" />
-	
-	 
+        android:id="@+id/action_likes"
+        android:icon="@drawable/ic_action_good"
+        android:showAsAction="always|withText"
+        android:title="0"/>
+    <item
+        android:id="@+id/menu_share"
+        android:title="@string/share"
+        android:showAsAction="withText"
+        android:actionProviderClass="@string/share_provider"
+        android:enabled="true" android:visible="true"/>
+
 </menu>
