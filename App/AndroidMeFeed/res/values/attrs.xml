@@ -11,5 +11,7 @@
         <attr name="grid_paddingTop" format="dimension" />
         <attr name="grid_paddingBottom" format="dimension" />
     </declare-styleable>
-
+    <declare-styleable name="OverFlow">
+        <attr name="overflow_button" format="reference"/>
+    </declare-styleable>
 </resources>
