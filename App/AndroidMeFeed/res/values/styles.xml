@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
    
     <style name="Theme.TranslucentActionBar" parent="@android:style/Theme.Holo.Light">
-        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
     </style>
 
     <style name="Theme.TranslucentActionBar.ActionBar" />
@@ -11,14 +11,16 @@
         <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
         <item name="android:windowActionBarOverlay">true</item>
     </style>
-     <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+     <style name="Widget.ActionBar.Ndroid" parent="@android:style/Widget.Holo.Light.ActionBar">
         <!-- <item name="android:background">@drawable/ab_background</item> -->
-        
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
     </style>
-
-    <style name="Widget.ActionBar.Transparent" parent="Widget.ActionBar">
+    
+    <style name="Widget.ActionBar.Transparent" parent="Widget.ActionBar.Ndroid">
         <item name="android:background">@android:color/transparent</item>
     </style>
-   
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+    <item name="overflow_button">@drawable/ic_action_overflow</item>
+    </style>
     
 </resources>

@@ -90,6 +90,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int item_margin=0x7f010005;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int overflow_button=0x7f01000a;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -142,21 +146,22 @@ containing a value of this type.
         public static final int ic_action_bar2=0x7f020005;
         public static final int ic_action_bar_gray=0x7f020006;
         public static final int ic_action_good=0x7f020007;
-        public static final int ic_drawer=0x7f020008;
-        public static final int ic_drawer_button=0x7f020009;
-        public static final int ic_drawer_button_down=0x7f02000a;
-        public static final int ic_drawer_button_down_selected=0x7f02000b;
-        public static final int ic_drawer_button_selected=0x7f02000c;
-        public static final int ic_dummy=0x7f02000d;
-        public static final int ic_feed=0x7f02000e;
-        public static final int ic_icon=0x7f02000f;
-        public static final int ic_launcher=0x7f020010;
-        public static final int ic_navigation_drawer=0x7f020011;
-        public static final int ic_new_feed=0x7f020012;
-        public static final int ic_settings=0x7f020013;
-        public static final int ic_staggered=0x7f020014;
-        public static final int ic_staggered_selected=0x7f020015;
-        public static final int staggered=0x7f020016;
+        public static final int ic_action_overflow=0x7f020008;
+        public static final int ic_drawer=0x7f020009;
+        public static final int ic_drawer_button=0x7f02000a;
+        public static final int ic_drawer_button_down=0x7f02000b;
+        public static final int ic_drawer_button_down_selected=0x7f02000c;
+        public static final int ic_drawer_button_selected=0x7f02000d;
+        public static final int ic_dummy=0x7f02000e;
+        public static final int ic_feed=0x7f02000f;
+        public static final int ic_icon=0x7f020010;
+        public static final int ic_launcher=0x7f020011;
+        public static final int ic_navigation_drawer=0x7f020012;
+        public static final int ic_new_feed=0x7f020013;
+        public static final int ic_settings=0x7f020014;
+        public static final int ic_staggered=0x7f020015;
+        public static final int ic_staggered_selected=0x7f020016;
+        public static final int staggered=0x7f020017;
     }
     public static final class id {
         public static final int action_likes=0x7f040024;
@@ -261,13 +266,12 @@ containing a value of this type.
         res/values-v11/styles.xml on API 19+ devices.
     
          */
-        public static final int AppBaseTheme=0x7f0b0005;
+        public static final int AppBaseTheme=0x7f0b0006;
+        public static final int OverFlow=0x7f0b0005;
         public static final int Theme_TranslucentActionBar=0x7f0b0000;
         public static final int Theme_TranslucentActionBar_ActionBar=0x7f0b0001;
         public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f0b0002;
-        /**  <item name="android:background">@drawable/ab_background</item> 
-         */
-        public static final int Widget_ActionBar=0x7f0b0003;
+        public static final int Widget_ActionBar_Ndroid=0x7f0b0003;
         public static final int Widget_ActionBar_Transparent=0x7f0b0004;
     }
     public static final class styleable {
@@ -312,6 +316,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.ndroidme:type
         */
         public static final int GoogleProgressBar_type = 0;
+        /** Attributes that can be used with a OverFlow.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #OverFlow_overflow_button com.ndroidme:overflow_button}</code></td><td></td></tr>
+           </table>
+           @see #OverFlow_overflow_button
+         */
+        public static final int[] OverFlow = {
+            0x7f01000a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.ndroidme.R.attr#overflow_button}
+          attribute's value can be found in the {@link #OverFlow} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.ndroidme:overflow_button
+        */
+        public static final int OverFlow_overflow_button = 0;
         /** Attributes that can be used with a StaggeredGridView.
            <p>Includes the following attributes:</p>
            <table>
