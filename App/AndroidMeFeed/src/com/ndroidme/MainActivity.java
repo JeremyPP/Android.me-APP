@@ -214,7 +214,7 @@ public class MainActivity extends Activity  {
 	private void loadRefreshLayout()
 	{
 		mRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
-		mRefreshLayout.setColorScheme(R.color.swipe_color_1, R.color.swipe_color_2, R.color.swipe_color_3, R.color.swipe_color_4);
+		mRefreshLayout.setColorSchemeColors(R.color.swipe_color_1, R.color.swipe_color_2, R.color.swipe_color_3, R.color.swipe_color_4);
 		mRefreshLayout.setOnRefreshListener(new OnRefreshListener(){
 
 			@Override
