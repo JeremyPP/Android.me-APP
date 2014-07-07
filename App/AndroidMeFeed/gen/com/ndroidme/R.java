@@ -267,6 +267,10 @@ containing a value of this type.
         public static final int Theme_TranslucentActionBar=0x7f0b0000;
         public static final int Theme_TranslucentActionBar_ActionBar=0x7f0b0001;
         public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f0b0002;
+        /**   <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_background</item>
+    </style> 
+         */
         public static final int Widget_ActionBar=0x7f0b0003;
         public static final int Widget_ActionBar_TextAppearance=0x7f0b0005;
         public static final int Widget_ActionBar_Transparent=0x7f0b0006;
