@@ -391,12 +391,12 @@ public class MainActivity extends Activity  {
 		if (notificationsValue && !isServiceRunning() ) {
 			Intent serviceIntent = new Intent(this, FeedService.class);
 			startService(serviceIntent);
-		} else {
+		}/* else {
 			if (isServiceRunning()) {
 				Intent serviceIntent = new Intent(this, FeedService.class);
 				stopService(serviceIntent);
-			}
-		}
+			}*/
+		
 	}
 	
 	@Override

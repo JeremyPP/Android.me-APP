@@ -32,6 +32,7 @@ public class FeedService extends Service {
 	private NotificationCompat.Builder mBuilder;
 	private NotificationManager mNotificationManager;
 	private ArticleManager mArticleManager;
+	private ArticlesRepository mArticleRepository;
 	private ScheduledThreadPoolExecutor mTimer;
 	private Runnable mCheckForNotifications = new Runnable() {
 
@@ -134,7 +135,7 @@ public class FeedService extends Service {
 				.getDefaultSharedPreferences(this);
 		boolean notificationsValue = sharedPreferences.getBoolean("Notifications_Value", false);
 		if (notificationsValue) {
-			new ArticlesRepository(this);
+			mArticleRepository=new ArticlesRepository(this);
 			mArticleManager = new ArticleManager(FeedConfig.FM_URL);
 			mTimer= new ScheduledThreadPoolExecutor(2);
 			mTimer.scheduleAtFixedRate(mCheckForNotifications, FeedConfig.FM_SEARCH_DELAY,FeedConfig.FM_SEARCH_INTERVAL, TimeUnit.MILLISECONDS);
@@ -153,7 +154,7 @@ public class FeedService extends Service {
 		super.onDestroy();
 		removeNotification();
 //		mTimer.cancel();
-		ArticlesRepository.sRepository.close();
+		//ArticlesRepository.sRepository.close();
 	}
 
 	@Override

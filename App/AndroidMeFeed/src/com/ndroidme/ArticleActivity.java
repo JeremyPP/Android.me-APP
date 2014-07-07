@@ -219,5 +219,6 @@ public class ArticleActivity extends Activity {
 	        }
 	    return super.onOptionsItemSelected(item);
 	}
+	
 
 }
