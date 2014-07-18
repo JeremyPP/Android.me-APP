@@ -176,8 +176,8 @@ public class ArticleActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		
-		MenuItem item = menu.findItem(R.id.action_likes);
-		item.setTitle(String.valueOf(mArticle.getCountLikes()));
+		//MenuItem item = menu.findItem(R.id.action_likes);
+		//item.setTitle(String.valueOf(mArticle.getCountLikes()));
 		//item.setShowAsAction(MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 		 MenuItem shareItem = menu.findItem(R.id.menu_share);
 		

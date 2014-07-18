@@ -160,8 +160,7 @@ containing a value of this type.
         public static final int staggered=0x7f020017;
     }
     public static final class id {
-        public static final int action_likes=0x7f040024;
-        public static final int action_view_in_browser=0x7f040026;
+        public static final int action_view_in_browser=0x7f040025;
         public static final int article_imgPhoto=0x7f040002;
         public static final int article_loading=0x7f040008;
         public static final int article_scroll=0x7f040001;
@@ -189,7 +188,7 @@ containing a value of this type.
         public static final int main_loading_list=0x7f04000c;
         public static final int main_right_layout=0x7f04000a;
         public static final int main_right_layout1=0x7f04000b;
-        public static final int menu_share=0x7f040025;
+        public static final int menu_share=0x7f040024;
         public static final int noconnection_imgCloud=0x7f040012;
         public static final int noconnection_tvLoad=0x7f040013;
         public static final int noconnection_tvRetry=0x7f040014;
