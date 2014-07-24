@@ -42,7 +42,9 @@
 	            app:column_count_portrait="@integer/portrait"
 	            app:grid_paddingLeft="-15dp"
 	            app:grid_paddingRight="-15dp"
-	            app:item_margin="12dp" />
+	            app:item_margin="12dp"
+	            android:paddingLeft="@dimen/side_margin"
+	            android:paddingRight="@dimen/side_margin" />
 	        </android.support.v4.widget.SwipeRefreshLayout>
 	        <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
 		        android:id="@+id/main_loading"

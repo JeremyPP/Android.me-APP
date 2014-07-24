@@ -3,8 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
+    
     android:background="@drawable/staggered" >
-
+    
     <TextView
         android:id="@+id/list_tvTitle"
         android:layout_width="match_parent"

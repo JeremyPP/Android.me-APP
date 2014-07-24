@@ -130,8 +130,14 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f090000;
         public static final int activity_vertical_margin=0x7f090001;
-        public static final int offset_width=0x7f090003;
-        public static final int shadow_width=0x7f090002;
+        public static final int offset_width=0x7f090004;
+        public static final int shadow_width=0x7f090003;
+        /** 
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    
+         */
+        public static final int side_margin=0x7f090002;
     }
     public static final class drawable {
         public static final int drawer_button=0x7f020000;
