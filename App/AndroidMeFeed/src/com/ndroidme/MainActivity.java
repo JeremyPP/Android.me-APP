@@ -82,12 +82,13 @@ public class MainActivity extends Activity  {
 	}
 	private void setUpList() { 
 		mList = (StaggeredGridView)findViewById(R.id.main_listView);
-		if (isTablet(this)) {
-			mList.setColumnCount(2);
-			mList.setColumnCountLandscape(3);
-		} else {
-			mList.setColumnCountLandscape(2);
-		}
+//		if (isTablet(this)) {
+//			mList.setColumnCount(2);
+//			mList.setColumnCountLandscape(3);
+//			
+//		} else {
+//			mList.setColumnCountLandscape(2);
+//		}
 		
 		mAdapter = new MyListAdapter(this, mArticles);
 		final View footer = ((LayoutInflater)MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
@@ -181,6 +182,7 @@ public class MainActivity extends Activity  {
 		});
 		mFirstRun = true;
 		mHasRequestedMore=false;
+	    
 	}
 
     public boolean isServiceRunning() {
@@ -366,6 +368,7 @@ public class MainActivity extends Activity  {
 			int actionBarColor = Color.parseColor("#6472CD");
 			tintManager.setStatusBarTintColor(actionBarColor);
 		}
+
 	}
     
 	@Override

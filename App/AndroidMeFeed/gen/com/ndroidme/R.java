@@ -201,16 +201,20 @@ containing a value of this type.
     }
     public static final class integer {
         public static final int default_type=0x7f070000;
+        public static final int landscape=0x7f070002;
+        public static final int portrait=0x7f070001;
     }
     public static final class layout {
         public static final int activity_article=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int activity_main_landscape=0x7f030002;
-        public static final int activity_noconnection=0x7f030003;
-        public static final int activity_settings=0x7f030004;
-        public static final int drawer_list_item=0x7f030005;
-        public static final int list_item=0x7f030006;
-        public static final int progress_bar=0x7f030007;
+        public static final int activity_main_landscape_tablet=0x7f030002;
+        public static final int activity_main_old=0x7f030003;
+        public static final int activity_main_tablet=0x7f030004;
+        public static final int activity_noconnection=0x7f030005;
+        public static final int activity_settings=0x7f030006;
+        public static final int drawer_list_item=0x7f030007;
+        public static final int list_item=0x7f030008;
+        public static final int progress_bar=0x7f030009;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
