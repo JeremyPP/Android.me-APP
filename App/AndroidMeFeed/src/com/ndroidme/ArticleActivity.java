@@ -1,6 +1,7 @@
 package com.ndroidme;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -17,6 +18,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -34,6 +36,7 @@ public class ArticleActivity extends Activity {
 	private Drawable mActionBarBackgroundDrawable;
 	private ArticlesRepository mArticleRepository;
 	private ShareActionProvider mShareActionProvider;
+	private Context context;
 	private class GetMoreInfo extends AsyncTask<String, Void, Void> {
 		Article article;
 
@@ -98,12 +101,23 @@ public class ArticleActivity extends Activity {
 		//wvFrom.setBackgroundColor(Color.parseColor("#cecece"));
 		//wvFrom.reload();
 	}
-	
+	private class PhotoListener implements OnClickListener
+	{
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			Intent imageExpand = new Intent(context,ArticleImageExpanded.class);
+			imageExpand.putExtra("imageUrl", mArticle.getPhotoUrl());
+			startActivity(imageExpand);
+		}
+		
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_article);
-
+        context=this;
 		getArticle();
 		if (mArticle == null) {
 			finish();
@@ -117,6 +131,7 @@ public class ArticleActivity extends Activity {
 		wvFrom = (TextView)findViewById(R.id.article_wvFrom);
 		wvContent = (WebView)findViewById(R.id.article_wvContent);
 		imgPhoto = (ImageView)findViewById(R.id.article_imgPhoto);
+		imgPhoto.setOnClickListener(new PhotoListener());
 		mArticleRepository=new ArticlesRepository(this);
 		Article article = ArticlesRepository.sRepository.getLoadedArticle(mArticle.getId());
 		if (article != null) {
