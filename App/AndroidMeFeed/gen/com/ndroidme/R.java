@@ -102,13 +102,15 @@ containing a value of this type.
         public static final int type=0x7f010000;
     }
     public static final class bool {
-        public static final int transparent_nav=0x7f080000;
+        public static final int adust_image_view=0x7f080000;
+        public static final int transparent_nav=0x7f080001;
     }
     public static final class color {
         public static final int blue=0x7f050001;
-        public static final int drawer_gray=0x7f050008;
-        public static final int drawer_purple=0x7f050009;
+        public static final int drawer_gray=0x7f050009;
+        public static final int drawer_purple=0x7f05000a;
         public static final int green=0x7f050003;
+        public static final int image_expanded_background=0x7f050008;
         public static final int red=0x7f050000;
         /**  <color name="swipe_color_1">#B6DB49</color>
     <color name="swipe_color_2">#99CC00</color>
@@ -163,10 +165,11 @@ containing a value of this type.
         public static final int ic_settings=0x7f020014;
         public static final int ic_staggered=0x7f020015;
         public static final int ic_staggered_selected=0x7f020016;
-        public static final int staggered=0x7f020017;
+        public static final int image_expanded_background=0x7f020017;
+        public static final int staggered=0x7f020018;
     }
     public static final class id {
-        public static final int action_view_in_browser=0x7f040025;
+        public static final int action_view_in_browser=0x7f040026;
         public static final int article_imgPhoto=0x7f040002;
         public static final int article_loading=0x7f040008;
         public static final int article_scroll=0x7f040001;
@@ -175,17 +178,18 @@ containing a value of this type.
         public static final int article_tvTitle=0x7f040003;
         public static final int article_wvContent=0x7f040005;
         public static final int article_wvFrom=0x7f040007;
-        public static final int drawer_imgIcon=0x7f04001b;
-        public static final int drawer_layout=0x7f04001a;
-        public static final int drawer_tvText=0x7f04001c;
+        public static final int drawer_imgIcon=0x7f04001c;
+        public static final int drawer_layout=0x7f04001b;
+        public static final int drawer_tvText=0x7f04001d;
         public static final int folding_circles=0x7f040000;
-        public static final int list_divider=0x7f040021;
-        public static final int list_imgPhoto=0x7f04001e;
-        public static final int list_loading=0x7f04001f;
-        public static final int list_tvComments=0x7f040023;
-        public static final int list_tvLikes=0x7f040022;
-        public static final int list_tvResume=0x7f040020;
-        public static final int list_tvTitle=0x7f04001d;
+        public static final int image_expanded=0x7f04001a;
+        public static final int list_divider=0x7f040022;
+        public static final int list_imgPhoto=0x7f04001f;
+        public static final int list_loading=0x7f040020;
+        public static final int list_tvComments=0x7f040024;
+        public static final int list_tvLikes=0x7f040023;
+        public static final int list_tvResume=0x7f040021;
+        public static final int list_tvTitle=0x7f04001e;
         public static final int main_drawer_layout=0x7f040009;
         public static final int main_error=0x7f040010;
         public static final int main_left_drawer=0x7f040011;
@@ -194,7 +198,7 @@ containing a value of this type.
         public static final int main_loading_list=0x7f04000c;
         public static final int main_right_layout=0x7f04000a;
         public static final int main_right_layout1=0x7f04000b;
-        public static final int menu_share=0x7f040024;
+        public static final int menu_share=0x7f040025;
         public static final int noconnection_imgCloud=0x7f040012;
         public static final int noconnection_tvLoad=0x7f040013;
         public static final int noconnection_tvRetry=0x7f040014;
@@ -218,9 +222,10 @@ containing a value of this type.
         public static final int activity_main_tablet=0x7f030004;
         public static final int activity_noconnection=0x7f030005;
         public static final int activity_settings=0x7f030006;
-        public static final int drawer_list_item=0x7f030007;
-        public static final int list_item=0x7f030008;
-        public static final int progress_bar=0x7f030009;
+        public static final int article_image_expanded=0x7f030007;
+        public static final int drawer_list_item=0x7f030008;
+        public static final int list_item=0x7f030009;
+        public static final int progress_bar=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;

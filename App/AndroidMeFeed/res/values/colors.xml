@@ -10,7 +10,7 @@
     <color name="swipe_color_2">#00b0ff</color>
     <color name="swipe_color_3">#303f9f</color>
     <color name="swipe_color_4">#7986cb</color>
- 
+    <color name="image_expanded_background">#000000</color>
 
     
 </resources>

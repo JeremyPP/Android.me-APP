@@ -56,6 +56,7 @@ public class ArticleImageExpanded extends Activity {
 			ImageLoader imageLoader=ImageLoader.getInstance();
 			imageLoader.displayImage(photoUrl, articleImageExpanded);
 		}
+		getActionBar().hide();
 		
 	}
 
