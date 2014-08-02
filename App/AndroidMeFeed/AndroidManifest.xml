@@ -49,7 +49,7 @@
 	            android:name="android.support.PARENT_ACTIVITY"
 	            android:value="com.example.myfirstapp.MainActivity" /> 
 	    </activity> 
-        <service 
+        <activity android:name="ArticleImageExpanded" android:immersive="true"></activity><service 
             android:name="com.ndroidme.FeedService"
             android:enabled="true" >
         </service>
@@ -60,7 +60,7 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <activity android:name="ArticleImageExpanded"></activity>
+        
         
     </application>
 
