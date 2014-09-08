@@ -36,5 +36,6 @@
 	<string name="share">Share</string>
 	<string name="share_provider">android.widget.ShareActionProvider</string>
 	<string name="view_in_browser">View in browser</string>
+	<string name="loading_">Loading...</string>
 
 </resources>

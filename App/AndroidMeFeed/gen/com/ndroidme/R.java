@@ -169,7 +169,7 @@ containing a value of this type.
         public static final int staggered=0x7f020018;
     }
     public static final class id {
-        public static final int action_view_in_browser=0x7f040026;
+        public static final int action_view_in_browser=0x7f040027;
         public static final int article_imgPhoto=0x7f040002;
         public static final int article_loading=0x7f040008;
         public static final int article_scroll=0x7f040001;
@@ -191,18 +191,19 @@ containing a value of this type.
         public static final int list_tvResume=0x7f040021;
         public static final int list_tvTitle=0x7f04001e;
         public static final int main_drawer_layout=0x7f040009;
-        public static final int main_error=0x7f040010;
-        public static final int main_left_drawer=0x7f040011;
-        public static final int main_listView=0x7f04000e;
-        public static final int main_loading=0x7f04000f;
-        public static final int main_loading_list=0x7f04000c;
+        public static final int main_error=0x7f04000f;
+        public static final int main_left_drawer=0x7f040010;
+        public static final int main_listView=0x7f04000d;
+        public static final int main_loading=0x7f04000e;
+        public static final int main_loading_list=0x7f040011;
         public static final int main_right_layout=0x7f04000a;
         public static final int main_right_layout1=0x7f04000b;
-        public static final int menu_share=0x7f040025;
+        public static final int menu_share=0x7f040026;
         public static final int noconnection_imgCloud=0x7f040012;
         public static final int noconnection_tvLoad=0x7f040013;
         public static final int noconnection_tvRetry=0x7f040014;
-        public static final int pull_to_refresh=0x7f04000d;
+        public static final int progress_bar_text=0x7f040025;
+        public static final int pull_to_refresh=0x7f04000c;
         public static final int settings_cbCache=0x7f040019;
         public static final int settings_cbNotifications=0x7f040017;
         public static final int settings_layout=0x7f040015;
@@ -217,15 +218,12 @@ containing a value of this type.
     public static final class layout {
         public static final int activity_article=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int activity_main_landscape_tablet=0x7f030002;
-        public static final int activity_main_old=0x7f030003;
-        public static final int activity_main_tablet=0x7f030004;
-        public static final int activity_noconnection=0x7f030005;
-        public static final int activity_settings=0x7f030006;
-        public static final int article_image_expanded=0x7f030007;
-        public static final int drawer_list_item=0x7f030008;
-        public static final int list_item=0x7f030009;
-        public static final int progress_bar=0x7f03000a;
+        public static final int activity_noconnection=0x7f030002;
+        public static final int activity_settings=0x7f030003;
+        public static final int article_image_expanded=0x7f030004;
+        public static final int drawer_list_item=0x7f030005;
+        public static final int list_item=0x7f030006;
+        public static final int progress_bar=0x7f030007;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -246,6 +244,7 @@ containing a value of this type.
         public static final int error_message=0x7f0a0010;
         public static final int error_title=0x7f0a000f;
         public static final int loading=0x7f0a000e;
+        public static final int loading_=0x7f0a0021;
         public static final int main_error=0x7f0a001b;
         public static final int noconnection_load=0x7f0a0019;
         public static final int noconnection_retry=0x7f0a001a;

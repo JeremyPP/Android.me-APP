@@ -89,13 +89,17 @@ public class MainActivity extends Activity  {
 //		} else {
 //			mList.setColumnCountLandscape(2);
 //		}
-		
+		mFirstRun = true;
+		mHasRequestedMore=false;
 		mAdapter = new MyListAdapter(this, mArticles);
 		final View footer = ((LayoutInflater)MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                 .inflate(R.layout.progress_bar, null, false);
+		
 		mList.addFooterView(footer);
-		mList.setAdapter(mAdapter);
 		footer.setVisibility(View.GONE);
+		//((TextView)footer.findViewById(R.id.progress_bar_text)).setText(R.string.loading_);
+		mList.setAdapter(mAdapter);
+		
 		mList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
@@ -180,8 +184,7 @@ public class MainActivity extends Activity  {
 				}
 			}
 		});
-		mFirstRun = true;
-		mHasRequestedMore=false;
+		
 	    
 	}
 
