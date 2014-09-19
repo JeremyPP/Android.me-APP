@@ -33,7 +33,7 @@
         <activity 
             android:name="com.ndroidme.ArticleActivity"
             android:theme="@style/Theme.TranslucentActionBar.ActionBar.Overlay" 
-            android:parentActivityName="com.ndroidme.MainActivity" >  
+            android:parentActivityName="com.ndroidme.MainActivity" android:hardwareAccelerated="true">  
             <!-- Parent activity meta-data to support 4.0 and lower -->
 	        <meta-data
 	            android:name="android.support.PARENT_ACTIVITY"

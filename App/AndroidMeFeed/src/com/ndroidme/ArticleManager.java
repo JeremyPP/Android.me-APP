@@ -16,6 +16,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.util.Log;
@@ -113,12 +114,7 @@ public class ArticleManager {
 			if (sucess == 0)
 				throw new Exception("Your request returned null");
 		
-			List<String> listOfTags = new ArrayList<String>();
-			JSONArray tags = allContent.getJSONArray("tags");
-			for (int i = 0; i < tags.length(); i++) {
-				String tag = tags.getString(i);
-				listOfTags.add(tag);
-			}
+			
 			String writer = allContent.getString("writer");
 			String content = allContent.getString("content");
 			List<String> listOfFrom = new ArrayList<String>();
@@ -126,14 +122,17 @@ public class ArticleManager {
 			listOfFrom.add(from.getString("name"));
 			listOfFrom.add(from.getString("link"));
 			
-			article.setTags(listOfTags);
+			//article.setTags(listOfTags);
 			article.setWriter(writer);
 			article.setContent(content);
 			article.setFrom(listOfFrom);
+			article.extractVideoURL();
 		} finally { 
 			inputStream.close();
 		}
 	}
+
+	
 
 	/**
 	 * Read all articles from the url and returns it as a list of 
@@ -169,8 +168,15 @@ public class ArticleManager {
 	    	  String photoUrl = article.getString("photo_url");
 	    	  int countLikes = article.getInt("countLikes");
 	    	  int countComments = article.getInt("countComments");
-	    	  String resume = article.getString("resume");	  
-	    	  list.add(new Article(id, null, null, title, resume, null, date, null, photoUrl, countComments, countLikes));
+	    	  String resume = article.getString("resume");	
+	    	  //String content= article.getString("content");
+	    	  //String writer= article.getString("writer");
+	    	  //List<String> listOfFrom = new ArrayList<String>();
+	    	  //JSONObject from = allContent.getJSONObject("from");
+			  //listOfFrom.add(from.getString("name"));
+			  //listOfFrom.add(from.getString("link"));
+	    	  
+	    	  list.add(new Article(id, null, null, title, resume, null, date,null, photoUrl, countComments, countLikes));
 	      }
 	    } finally {
 	      inputStream.close();

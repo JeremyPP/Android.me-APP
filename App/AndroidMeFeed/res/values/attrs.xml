@@ -11,6 +11,9 @@
         <attr name="grid_paddingTop" format="dimension" />
         <attr name="grid_paddingBottom" format="dimension" />
     </declare-styleable>
+    <!-- <declare-styleable name="AppBaseTheme">
+        <attr name="fontSize" format="" ></attr>
+    </declare-styleable> -->
 <!--     <declare-styleable name="OverFlow"> -->
 <!--         <attr name="overflow_button" format="reference"/> -->
 <!--     </declare-styleable> -->

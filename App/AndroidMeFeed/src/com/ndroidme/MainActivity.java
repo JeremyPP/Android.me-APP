@@ -165,6 +165,7 @@ public class MainActivity extends Activity  {
 										}
 									});
 								} catch(Exception e) {
+									e.fillInStackTrace();
 									runOnUiThread(new Runnable() {
 										
 										@Override

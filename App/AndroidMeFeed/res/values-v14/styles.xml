@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme for API 14+. This theme completely replaces
@@ -11,5 +11,7 @@
 		<item name="android:homeAsUpIndicator">@drawable/ic_ab_back_holo_dark_am</item>
         <item name="android:titleTextStyle"></item>
     </style> -->
-
+<!-- <style name="AppBaseTheme" parent="android:Theme.Holo.Light"> -->
+<!--     <item name="android:textSize">@dimen/fontSize</item> -->
+<!-- </style> -->
 </resources>

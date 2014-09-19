@@ -3,6 +3,10 @@ package com.ndroidme;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -13,9 +17,14 @@ import android.os.Parcelable;
  */
 public class Article implements Parcelable {
 	
+	private static final int SRC_URL_OFFSET = 4;
 	private static final String DIV_END = "</div>";
 	private static final String DIV_STYLE = "<div style=\"text-align:justify;\">";
-
+    private static final String ARTICLE_STYLE="<style type=\"text/css\">"
+    +"div.c3 {text-align:justify;}"
+    +"div.c2 {text-align: center}"
+    +"iframe.c1 {max-width: 105%; margin-left: -20px;margin-right: -20px;}"
+   +"</style>";
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -25,7 +34,7 @@ public class Article implements Parcelable {
 		result = prime * result + mCountComments;
 		result = prime * result + mCountLikes;
 		result = prime * result + ((mDate == null) ? 0 : mDate.hashCode());
-		result = prime * result + ((mFrom == null) ? 0 : mFrom.hashCode());
+		result = prime * result + ((mJsonFrom == null) ? 0 : mJsonFrom.hashCode());
 		result = prime * result + mId;
 		result = prime * result
 				+ ((mPhotoUrl == null) ? 0 : mPhotoUrl.hashCode());
@@ -59,10 +68,10 @@ public class Article implements Parcelable {
 				return false;
 		} else if (!mDate.equals(other.mDate))
 			return false;
-		if (mFrom == null) {
-			if (other.mFrom != null)
+		if (mJsonFrom == null) {
+			if (other.mJsonFrom != null)
 				return false;
-		} else if (!mFrom.equals(other.mFrom))
+		} else if (!mJsonFrom.equals(other.mJsonFrom))
 			return false;
 		if (mId != other.mId)
 			return false;
@@ -94,13 +103,17 @@ public class Article implements Parcelable {
 		return true;
 	}
 
-	private List<String> mFrom, mTags;
-	private String mTitle, mResume, mContent, mDate, mWriter, mPhotoUrl;
+	private JSONArray mJsonFrom, mJsonTags;
+	List<String> from;
+	private String mTitle, mResume, mContent, mDate, mWriter, mPhotoUrl,mVideoUrl;
 	private int mId, mCountLikes, mCountComments;
-	private static String DOCTYPE="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">";
-	private static String HEAD="<html><head><title></title></head><body>";
+	private List<String> mFrom;
+	private List<String> mTags;
+//	private static String DOCTYPE="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">";
+	private static String DOCTYPE="<!DOCTYPE html>";
+	private static String HEAD="<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title> Article"+"</title>"+ARTICLE_STYLE+"</head><body>";
 	private static String END="</body></html>";
-	private static String DATAURL="data:text/html; charset=UTF8,";
+	private static String DATAURL="data:text/html,"; /*charset=UTF8,";*/
 	private static String ARTICLE_URL="http://ndroidme.com/news.php?article=";
 	public static final Parcelable.Creator<Article> CREATOR =
 			new Parcelable.Creator<Article>(){
@@ -141,7 +154,7 @@ public class Article implements Parcelable {
 	 * @param countLikes
 	 * 		Quantify of likes of the article
 	 */
-	public Article(int id, List<String> from, List<String> tags, String title, String resume, 
+	public Article(int id, List<String>  listOfFrom, JSONArray jsonTags, String title, String resume, 
 			String content, String date, String writer, String photoUrl, int countComments, 
 			int countLikes) { 
 		this.mId = id;
@@ -153,8 +166,9 @@ public class Article implements Parcelable {
 		this.mPhotoUrl = photoUrl;
 		this.mCountComments = countComments;
 		this.mCountLikes = countLikes;
-		this.mFrom = from;
-		this.mTags = tags;
+		this.from = listOfFrom;
+		this.mJsonTags = jsonTags;
+		this.mVideoUrl=null;
 	}
 
 	public String getArticleUrl()
@@ -231,7 +245,17 @@ public class Article implements Parcelable {
 	
 	public String getContentUrl()
 	{
-		return DATAURL+DOCTYPE+HEAD+DIV_STYLE + mContent + DIV_END+END;
+	return DATAURL+ DOCTYPE+HEAD+DIV_STYLE + mContent + DIV_END+END;
+		//return /*DATAURL+*/DOCTYPE+HEAD++mContent
+
+/*"<div class=\"c3\"><p>A couple of days ago, Dell unveiled the Venue 8 7840. While the company have announced some other tablets these last two years, none of them have got our attention, but this one is a completely different story. And even if the name is not the best out there, the specs definitely are. The tablet brings some really interesting and innovative features along with the title of the the world's thinnest tablet with only 6mm.</p>"+
+"<p>About the specs, the Venue 8 7840 has a 8.4-inch Quad HD 2560 x 1600 OLED display, a quad-core 2.33GHz Intel Atom Z3580 processor, and 32GB of internal storage expandable via a microSD card slot. All of this running on Android 4.4.4 KitKat.</p>"
++"<p>But the cameras is where things become even more interesting. The tablet features a front facing camera plus three 8 megapixel camera on the back. These cameras are here to bring some really cool tricks, thanks to Intel's RealSense depth-mapping technology, which allows post-capture refocusing anong other fun stuff made possible by having depth information, such as precise space measurements and selective color exclusion based on distance from the camera.</p>"
++"<p>The tablet is expected to be available later this year, probably for the holiday season in the United States and other countries. Unfortunately, we have no information on the price just yet.</p>"
++"<p>So, are you interested on this device?</p>"
++"<div class=\"c2\"><br />"
++"<iframe width=\"798\" height=\"448\" src=\"//www.youtube.com/embed/uJxBZfgkJLM\"  class=\"c1\"></iframe></div>"
++"</div> </body></html>";*/
 	}
 
 	public void setContent(String content) {
@@ -253,7 +277,32 @@ public class Article implements Parcelable {
 	public void setId(int id) {
 		this.mId = id;
 	}
-	
+	public void extractVideoURL()
+	{
+		   mVideoUrl=null;
+           if(mContent==null)
+           {
+        	   throw new NullPointerException("mContent is null Cannot extract VideoURL");
+           }
+           String[] partsOfContent=mContent.split("<center><br>");
+           mContent= partsOfContent[0]+"</body></html>";
+           if(partsOfContent.length==2)
+           {
+             String iFrameStr=partsOfContent[1];
+             mVideoUrl=iFrameStr.replace("<center><br>", "");
+             mVideoUrl=mVideoUrl.replace("</center>", "");
+           
+            /* int srcPlace= iFrameStr.indexOf("src=");
+             mVideoUrl=iFrameStr.substring(srcPlace+SRC_URL_OFFSET,iFrameStr.indexOf(' ',srcPlace));
+             mVideoUrl= "http:"+mVideoUrl.replace("\"", "");*/
+             //mVideoUrl="http:"+mVideoUrl.replace("embed/", "");
+           }
+           
+	}
+	public void getMoreInfo()
+	{
+		
+	}
 	// Parcelling part
     public Article(Parcel in){
     	int id = in.readInt();//
@@ -267,6 +316,7 @@ public class Article implements Parcelable {
     	String date = in.readString();//
     	String writer = in.readString();//
     	String photoUrl = in.readString();//
+    	String videoUrl = in.readString();
     	int countComments = in.readInt();//
     	int countLikes = in.readInt();//
     	
@@ -279,10 +329,19 @@ public class Article implements Parcelable {
         this.setDate(date);
         this.setWriter(writer);
         this.setPhotoUrl(photoUrl);
+        this.setVideoUrl(videoUrl);
         this.setCountComments(countComments);
         this.setCountLikes(countLikes);
     }
     
+	public void setVideoUrl(String videoUrl) {
+		// TODO Auto-generated method stub
+		mVideoUrl=videoUrl;
+	}
+    public String getVideoUrl()
+    {
+    	return mVideoUrl;
+    }
 	@Override
 	public int describeContents() {
 		return 0;
@@ -292,15 +351,40 @@ public class Article implements Parcelable {
 	public void writeToParcel(Parcel dest, int flags) {
 		dest.writeInt(getId());//
 		dest.writeStringList(getFrom());//
-		dest.writeStringList(getTags());//
+		try {
+			dest.writeStringList(getJsonTags());
+		} catch (JSONException e) {
+			
+			dest.writeStringList(null);
+			e.printStackTrace();
+		}//
 		dest.writeString(getTitle());//
 		dest.writeString(getResume());//
 		dest.writeString(getContent());//
 		dest.writeString(getDate());//
 		dest.writeString(getWriter());//
 		dest.writeString(getPhotoUrl());//
+		dest.writeString(mVideoUrl);
 		dest.writeInt(getCountComments());//
 		dest.writeInt(getCountLikes());//
 	}
+
+	private List<String> getJsonTags() throws JSONException{
+		// TODO Auto-generated method stub
+		
+			List<String> listOfTags = new ArrayList<String>();
+			if(mJsonTags!=null)
+			{
+			for (int i = 0; i < mJsonTags.length(); i++) {
+				String tag = mJsonTags.getString(i);
+				listOfTags.add(tag);
+			}
+			return listOfTags;
+			}
+			return null;
+		
+	}
+
+	
 
 }

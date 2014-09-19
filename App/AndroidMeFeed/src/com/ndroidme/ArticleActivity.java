@@ -1,8 +1,10 @@
 package com.ndroidme;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -19,11 +21,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebSettings.PluginState;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 
@@ -33,6 +39,9 @@ public class ArticleActivity extends Activity {
 	private TextView tvTitle, tvDate, tvFrom, wvFrom;
 	private ImageView imgPhoto;
 	private WebView wvContent;
+	//private VideoView vvVideo;
+	private WebView wvVideo;
+	private WebChromeClient mChromeClient;
 	private Drawable mActionBarBackgroundDrawable;
 	private ArticlesRepository mArticleRepository;
 	private ShareActionProvider mShareActionProvider;
@@ -83,7 +92,11 @@ public class ArticleActivity extends Activity {
 		String writer = (getText(R.string.article_writer) + " " + "<b>" + mArticle.getWriter() + "</b>").toUpperCase();
 		String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
 		tvDate.setText(Html.fromHtml(writer + " | " + date));
-		wvContent.loadUrl(mArticle.getContentUrl()); 
+		String url= mArticle.getContentUrl();
+		wvContent.loadData(url,"text/html",null);
+		//vvVideo.setVideoURI(Uri.parse(mArticle.getVideoUrl()));
+		wvVideo.loadDataWithBaseURL("http://ndroid.me", mArticle.getVideoUrl(), "text/html", "UTF-8", null);
+		//wvContent.loadUrl("http://www.codingzebra.com/TestEmbedYouTube.html");
 		wvFrom.setText(mArticle.getFrom().get(0));
 		wvFrom.setOnClickListener(new View.OnClickListener() {
 			
@@ -113,9 +126,15 @@ public class ArticleActivity extends Activity {
 		}
 		
 	}
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+		    if ( 0 != ( getApplicationInfo().flags &= ApplicationInfo.FLAG_DEBUGGABLE ) ) {
+		        WebView.setWebContentsDebuggingEnabled(true);
+		    }
+		}
 		setContentView(R.layout.activity_article);
         context=this;
 		getArticle();
@@ -130,6 +149,13 @@ public class ArticleActivity extends Activity {
 		tvFrom = (TextView)findViewById(R.id.article_tvFrom);
 		wvFrom = (TextView)findViewById(R.id.article_wvFrom);
 		wvContent = (WebView)findViewById(R.id.article_wvContent);
+		//vvVideo=(VideoView) findViewById(R.id.article_Video);
+		wvVideo=(WebView) findViewById(R.id.article_wvVideo);
+		mChromeClient =new WebChromeClient();
+		wvVideo.setWebChromeClient(mChromeClient);
+		wvVideo.getSettings().setJavaScriptEnabled(true);
+		wvVideo.getSettings().setAllowFileAccess(true);
+		wvVideo.getSettings().setPluginState(WebSettings.PluginState.ON);
 		imgPhoto = (ImageView)findViewById(R.id.article_imgPhoto);
 		imgPhoto.setOnClickListener(new PhotoListener());
 		mArticleRepository=new ArticlesRepository(this);
@@ -139,6 +165,9 @@ public class ArticleActivity extends Activity {
 			showInfo();
 		} else {
 			new GetMoreInfo(mArticle).execute();
+			//mArticle.getMoreInfo();
+			ArticlesRepository.sRepository.saveArticle(mArticle.getId(), mArticle);
+			//showInfo();
 		}
 
 		mActionBarBackgroundDrawable = getResources().getDrawable(R.drawable.ic_action_bar2);
