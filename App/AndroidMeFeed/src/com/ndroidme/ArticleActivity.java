@@ -263,6 +263,12 @@ public class ArticleActivity extends Activity {
 	        }
 	    return super.onOptionsItemSelected(item);
 	}
+
+	protected void onPause()
+	{
+		super.onPause();
+		wvVideo.loadUrl("about:blank");
+	}
 	
 
 }
