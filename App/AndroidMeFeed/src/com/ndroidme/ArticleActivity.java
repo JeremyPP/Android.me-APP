@@ -93,7 +93,7 @@ public class ArticleActivity extends Activity {
 		String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
 		tvDate.setText(Html.fromHtml(writer + " | " + date));
 		String url= mArticle.getContentUrl();
-		wvContent.loadData(url,"text/html",null);
+		wvContent.loadUrl(url);
 		//vvVideo.setVideoURI(Uri.parse(mArticle.getVideoUrl()));
 		wvVideo.loadDataWithBaseURL("http://ndroid.me", mArticle.getVideoUrl(), "text/html", "UTF-8", null);
 		//wvContent.loadUrl("http://www.codingzebra.com/TestEmbedYouTube.html");

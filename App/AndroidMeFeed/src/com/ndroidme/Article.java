@@ -113,7 +113,7 @@ public class Article implements Parcelable {
 	private static String DOCTYPE="<!DOCTYPE html>";
 	private static String HEAD="<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta charset=\"utf-8\" /><title> Article"+"</title>"+ARTICLE_STYLE+"</head><body>";
 	private static String END="</body></html>";
-	private static String DATAURL="data:text/html,"; /*charset=UTF8,";*/
+	private static String DATAURL="data:text/html; charset=UTF8,";
 	private static String ARTICLE_URL="http://ndroidme.com/news.php?article=";
 	public static final Parcelable.Creator<Article> CREATOR =
 			new Parcelable.Creator<Article>(){
