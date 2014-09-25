@@ -42,10 +42,10 @@
 		        android:id="@+id/article_wvContent"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
+		        android:textSize="@dimen/fontSize"
 		        android:paddingLeft="15dp"
 		        android:paddingRight="15dp"  />
-"
-		    <WebView
+       	    <WebView
  		        android:id="@+id/article_wvVideo"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
