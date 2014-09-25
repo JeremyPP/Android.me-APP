@@ -6,6 +6,6 @@
     <dimen name="side_margin">0dp</dimen>
     <dimen name="shadow_width">10dp</dimen>
     <dimen name="offset_width">5dp</dimen>
-    <dimen name="fontSize">12sp</dimen>
+    <dimen name="fontSize">18dp</dimen>
     
 </resources>

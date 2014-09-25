@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
    
     <style name="Theme.TranslucentActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
@@ -25,6 +25,7 @@
    </style>
     <style name="Widget.ActionBar.TextAppearance" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
         <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/fontSize</item>
     </style>
     <style name="Widget.ActionBar.Transparent">
         <item name="android:background">@android:color/transparent</item>
