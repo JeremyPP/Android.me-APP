@@ -19,10 +19,11 @@ public class Article implements Parcelable {
 	
 	private static final int SRC_URL_OFFSET = 4;
 	private static final String DIV_END = "</div>";
-	private static final String DIV_STYLE = "<div style=\"text-align:justify;\">";
+	private static final String DIV_STYLE = "<div class=\"phone\">";
+	private static final String DIV_TABLET_STYLE="<div class=\"tablet\">";
     private static final String ARTICLE_STYLE="<style type=\"text/css\">"
-    +"div.c3 {text-align:justify;}"
-    +"div.c2 {text-align: center}"
+    +"div.tablet {text-align:justify; font-size:20px;}"
+    +"div.phone {text-align: center}"
     +"iframe.c1 {max-width: 105%; margin-left: -20px;margin-right: -20px;}"
    +"</style>";
 	@Override
@@ -243,9 +244,17 @@ public class Article implements Parcelable {
 		return mContent;
 	}
 	
-	public String getContentUrl()
+	public String getContentUrl(boolean isTablet)
 	{
-	return DATAURL+ DOCTYPE+HEAD+DIV_STYLE + mContent + DIV_END+END;
+		if(isTablet==false)
+		{
+	      return DATAURL+ DOCTYPE+HEAD+DIV_STYLE + mContent + DIV_END+END;
+		}
+		else
+		{
+			return DATAURL+DOCTYPE+HEAD+DIV_TABLET_STYLE+mContent+DIV_END  +END;
+		}
+		
 		//return /*DATAURL+*/DOCTYPE+HEAD++mContent
 
 /*"<div class=\"c3\"><p>A couple of days ago, Dell unveiled the Venue 8 7840. While the company have announced some other tablets these last two years, none of them have got our attention, but this one is a completely different story. And even if the name is not the best out there, the specs definitely are. The tablet brings some really interesting and innovative features along with the title of the the world's thinnest tablet with only 6mm.</p>"+

@@ -29,5 +29,7 @@
     <style name="Widget.ActionBar.Transparent">
         <item name="android:background">@android:color/transparent</item>
     </style>
-    
+    <style name="ArticleTitleTextAppearance" parent="@android:style/TextAppearance.Large">
+        
+    </style>
 </resources>

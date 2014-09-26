@@ -26,6 +26,7 @@
        <item name="android:titleTextStyle">@style/Widget.ActionBar.TextAppearance</item>
        
     </style>
+    
     <style name="Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
        <item name="android:actionBarItemBackground">@drawable/ic_action_overflow</item>      
    </style>

@@ -103,7 +103,8 @@ containing a value of this type.
     }
     public static final class bool {
         public static final int adust_image_view=0x7f080000;
-        public static final int transparent_nav=0x7f080001;
+        public static final int tablet=0x7f080001;
+        public static final int transparent_nav=0x7f080002;
     }
     public static final class color {
         public static final int blue=0x7f050001;
@@ -132,6 +133,7 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f090000;
         public static final int activity_vertical_margin=0x7f090001;
+        public static final int article_title_size=0x7f090006;
         public static final int fontSize=0x7f090005;
         public static final int offset_width=0x7f090004;
         public static final int shadow_width=0x7f090003;
@@ -277,7 +279,8 @@ containing a value of this type.
         res/values-v11/styles.xml on API 19+ devices.
     
          */
-        public static final int AppBaseTheme=0x7f0b0007;
+        public static final int AppBaseTheme=0x7f0b0008;
+        public static final int ArticleTitleTextAppearance=0x7f0b0007;
         public static final int Overflow=0x7f0b0004;
         public static final int Theme_TranslucentActionBar=0x7f0b0000;
         public static final int Theme_TranslucentActionBar_ActionBar=0x7f0b0001;

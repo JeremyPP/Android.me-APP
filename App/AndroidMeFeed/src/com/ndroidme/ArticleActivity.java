@@ -79,7 +79,10 @@ public class ArticleActivity extends Activity {
 			}
 		}
 	}
-	
+	private boolean isTablet()
+	{
+		return getResources().getBoolean(R.bool.tablet);
+	}
 	private void showInfo() {
 		ProgressBar bar = (ProgressBar)findViewById(R.id.article_loading);
 		bar.setVisibility(ProgressBar.GONE);
@@ -92,7 +95,12 @@ public class ArticleActivity extends Activity {
 		String writer = (getText(R.string.article_writer) + " " + "<b>" + mArticle.getWriter() + "</b>").toUpperCase();
 		String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
 		tvDate.setText(Html.fromHtml(writer + " | " + date));
-		String url= mArticle.getContentUrl();
+		
+		
+		
+		String url= mArticle.getContentUrl(isTablet());
+
+		
 		wvContent.loadUrl(url);
 		//vvVideo.setVideoURI(Uri.parse(mArticle.getVideoUrl()));
 		wvVideo.loadDataWithBaseURL("http://ndroid.me", mArticle.getVideoUrl(), "text/html", "UTF-8", null);
