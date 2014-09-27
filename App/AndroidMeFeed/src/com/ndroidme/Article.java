@@ -23,7 +23,7 @@ public class Article implements Parcelable {
 	private static final String DIV_TABLET_STYLE="<div class=\"tablet\">";
     private static final String ARTICLE_STYLE="<style type=\"text/css\">"
     +"div.tablet {text-align:justify; font-size:20px;}"
-    +"div.phone {text-align: center}"
+    +"div.phone {text-align: justify;}"
     +"iframe.c1 {max-width: 105%; margin-left: -20px;margin-right: -20px;}"
    +"</style>";
 	@Override
@@ -257,14 +257,7 @@ public class Article implements Parcelable {
 		
 		//return /*DATAURL+*/DOCTYPE+HEAD++mContent
 
-/*"<div class=\"c3\"><p>A couple of days ago, Dell unveiled the Venue 8 7840. While the company have announced some other tablets these last two years, none of them have got our attention, but this one is a completely different story. And even if the name is not the best out there, the specs definitely are. The tablet brings some really interesting and innovative features along with the title of the the world's thinnest tablet with only 6mm.</p>"+
-"<p>About the specs, the Venue 8 7840 has a 8.4-inch Quad HD 2560 x 1600 OLED display, a quad-core 2.33GHz Intel Atom Z3580 processor, and 32GB of internal storage expandable via a microSD card slot. All of this running on Android 4.4.4 KitKat.</p>"
-+"<p>But the cameras is where things become even more interesting. The tablet features a front facing camera plus three 8 megapixel camera on the back. These cameras are here to bring some really cool tricks, thanks to Intel's RealSense depth-mapping technology, which allows post-capture refocusing anong other fun stuff made possible by having depth information, such as precise space measurements and selective color exclusion based on distance from the camera.</p>"
-+"<p>The tablet is expected to be available later this year, probably for the holiday season in the United States and other countries. Unfortunately, we have no information on the price just yet.</p>"
-+"<p>So, are you interested on this device?</p>"
-+"<div class=\"c2\"><br />"
-+"<iframe width=\"798\" height=\"448\" src=\"//www.youtube.com/embed/uJxBZfgkJLM\"  class=\"c1\"></iframe></div>"
-+"</div> </body></html>";*/
+
 	}
 
 	public void setContent(String content) {
