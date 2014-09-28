@@ -1,7 +1,7 @@
 package com.ndroidme;
 
 import android.app.Application;
-import com.nostra13.universalimageloader.core.*;
+
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -20,6 +20,7 @@ public class NdroidApplication extends Application {
 		    .defaultDisplayImageOptions(options)
 		    .build();
 		ImageLoader.getInstance().init(config);
+		
 	}
 
 }

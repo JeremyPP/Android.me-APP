@@ -10,10 +10,7 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Michael/Development/adt-bundle-windows-x86_64-20140624/sdk/extras/android/support/v7/appcompat/libs/android-support-v4.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Michael/Development/adt-bundle-windows-x86_64-20140624/sdk/extras/android/support/v7/appcompat/libs/android-support-v7-appcompat.jar"/>
-	<classpathentry kind="lib" path="libs/universal-image-loader-1.9.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="libs/universal-image-loader-1.9.3-with-sources.jar"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/Michael/git/Android.me-APP/App/AndroidMeFeed/libs/universal-image-loader-1.9.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/git/Android.me-APP/App/AndroidMeFeed/libs/universal-image-loader-1.9.3-with-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Michael/git/Android.me-APP/App/AndroidMeFeed/libs/universal-image-loader-1.9.3-with-sources.jar"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

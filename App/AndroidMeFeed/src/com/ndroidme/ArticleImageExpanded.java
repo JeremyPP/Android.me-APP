@@ -2,6 +2,7 @@ package com.ndroidme;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
+import com.nostra13.universalimageloader.core.assist.ImageSize;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
 import android.app.Activity;
@@ -11,10 +12,12 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageView;
 
 public class ArticleImageExpanded extends Activity {
 	private ImageView articleImageExpanded;
+	//private WebView articleImageExpanded;
 	private class ImageListener implements ImageLoadingListener
 	{
 
@@ -35,6 +38,9 @@ public class ArticleImageExpanded extends Activity {
 		public void onLoadingComplete(String imageUri, View view,
 				Bitmap loadedImage) {
 			// TODO Auto-generated method stub
+			//Bitmap fullScreen= ScaleBitmap.scaleToView(this,photoUrl);
+			articleImageExpanded.setAdjustViewBounds(true);
+			articleImageExpanded.setImageBitmap(loadedImage);
 			
 			
 		}
@@ -56,9 +62,14 @@ public class ArticleImageExpanded extends Activity {
 		String photoUrl= intentSent.getStringExtra("imageUrl");
 		if(photoUrl!="")
 		{
-			Bitmap fullScreen= ScaleBitmap.scaleToView(this,photoUrl);
-			articleImageExpanded.setAdjustViewBounds(true);
-			articleImageExpanded.setImageBitmap(fullScreen);
+			/*DisplayMetrics metrics= new DisplayMetrics();
+		    this.getWindowManager().getDefaultDisplay().getMetrics(metrics);
+		    ImageLoader imageLoader =ImageLoader.getInstance();
+		    imageLoader.getMemoryCache().remove(photoUrl);
+		    imageLoader.getDiskCache().remove(photoUrl);*/
+			ImageLoader.getInstance().loadImage(photoUrl,new ImageListener());
+			
+			//articleImageExpanded.loadUrl(photoUrl);
 		}
 		getActionBar().hide();
 		

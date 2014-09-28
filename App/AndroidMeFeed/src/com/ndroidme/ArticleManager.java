@@ -72,7 +72,7 @@ public class ArticleManager {
 	 * @throws IOException
 	 * 		Case the url isn't valid
 	 */
-	private static String readAll(Reader rd) throws IOException {
+	private static String readAll(BufferedReader rd) throws IOException {
 	    StringBuilder sb = new StringBuilder();
 	    int bufferSize=1024;
 	    char[] buffer=new char[bufferSize];
