@@ -74,9 +74,20 @@ public class ArticleManager {
 	 */
 	private static String readAll(Reader rd) throws IOException {
 	    StringBuilder sb = new StringBuilder();
-	    int cp;
-	    while ((cp = rd.read()) != -1) {
-	      sb.append((char) cp);
+	    int bufferSize=1024;
+	    char[] buffer=new char[bufferSize];
+	    while (true)
+	    {
+	      int charsRead= rd.read(buffer);
+	      if(charsRead!=bufferSize)
+	      {
+	    	  if(charsRead>0)
+	    	  {
+	    		  sb.append(buffer,0,charsRead);
+	    	  }
+	    	  break;
+	      }
+	      sb.append(buffer);
 	    }
 	    return sb.toString();
 	}	
