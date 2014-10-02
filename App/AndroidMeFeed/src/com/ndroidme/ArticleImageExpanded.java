@@ -11,11 +11,13 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.webkit.WebView;
 import android.widget.ImageView;
 
-public class ArticleImageExpanded extends Activity {
+public class ArticleImageExpanded extends Activity implements OnTouchListener {
 	private ImageView articleImageExpanded;
 	//private WebView articleImageExpanded;
 	private class ImageListener implements ImageLoadingListener
@@ -73,6 +75,12 @@ public class ArticleImageExpanded extends Activity {
 		}
 		getActionBar().hide();
 		
+	}
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
