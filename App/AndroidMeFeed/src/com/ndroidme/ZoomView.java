@@ -38,11 +38,11 @@ public class ZoomView extends ImageView {
 
 	public void setBitmap(Bitmap bitmap) {
 		setImageBitmap(bitmap);
-		centerVertical(bitmap.getHeight(),bitmap.getWidth());
+		center(bitmap.getHeight(),bitmap.getWidth());
 
 	}
 
-	private void centerVertical(int bitmapHeight,int bitmapWidth) {
+	private void center(int bitmapHeight,int bitmapWidth) {
 		int screenHeight = getResources().getDisplayMetrics().heightPixels;
 		int screenWidth = getResources().getDisplayMetrics().widthPixels;
         int centerHeight= (screenHeight-bitmapHeight)/2;
