@@ -1,24 +1,19 @@
 package com.ndroidme;
 
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.assist.ImageSize;
-import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
-
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
-import android.webkit.WebView;
-import android.widget.ImageView;
 
-public class ArticleImageExpanded extends Activity implements OnTouchListener {
-	private ImageView articleImageExpanded;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.FailReason;
+import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
+
+public class ArticleImageExpanded extends Activity  {
+	private ZoomView articleImageExpanded;
+	
+
 	//private WebView articleImageExpanded;
 	private class ImageListener implements ImageLoadingListener
 	{
@@ -41,8 +36,8 @@ public class ArticleImageExpanded extends Activity implements OnTouchListener {
 				Bitmap loadedImage) {
 			// TODO Auto-generated method stub
 			//Bitmap fullScreen= ScaleBitmap.scaleToView(this,photoUrl);
-			articleImageExpanded.setAdjustViewBounds(true);
-			articleImageExpanded.setImageBitmap(loadedImage);
+			//articleImageExpanded.setAdjustViewBounds(true);
+			articleImageExpanded.setBitmap(loadedImage);
 			
 			
 		}
@@ -59,7 +54,8 @@ public class ArticleImageExpanded extends Activity implements OnTouchListener {
 	{
 		super.onCreate(instance);
 		setContentView(R.layout.article_image_expanded);
-		articleImageExpanded= (ImageView)findViewById(R.id.image_expanded);
+		articleImageExpanded= (ZoomView)findViewById(R.id.image_expanded);
+		//articleImageExpanded.setOnTouchListener(this);
 		Intent intentSent= getIntent();
 		String photoUrl= intentSent.getStringExtra("imageUrl");
 		if(photoUrl!="")
@@ -77,10 +73,10 @@ public class ArticleImageExpanded extends Activity implements OnTouchListener {
 		
 	}
 
-	@Override
-	public boolean onTouch(View v, MotionEvent event) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
+	
+
+  
+
 
 }

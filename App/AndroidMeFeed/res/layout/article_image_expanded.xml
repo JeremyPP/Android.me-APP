@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="@color/image_expanded_background">
+    android:background="@color/image_expanded_background"
+    android:orientation="vertical" >
 
-    <ImageView
+    <com.ndroidme.ZoomView
         android:id="@+id/image_expanded"
         android:layout_width="match_parent"
-         android:layout_height="match_parent" 
-         android:adjustViewBounds="@bool/adust_image_view" 
-       android:layout_centerVertical="true" 
-         /> 
+        android:layout_height="match_parent" 
+        android:layout_gravity="center_vertical"/>
 
-    <!-- <WebView
+    <!--
+         <WebView
         android:id="@+id/image_expanded"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        /> -->
+        />
+    -->
 
-</RelativeLayout>
+</LinearLayout>
