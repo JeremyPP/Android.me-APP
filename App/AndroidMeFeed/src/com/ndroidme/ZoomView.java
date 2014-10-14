@@ -38,15 +38,18 @@ public class ZoomView extends ImageView {
 
 	public void setBitmap(Bitmap bitmap) {
 		setImageBitmap(bitmap);
-		centerVertical(bitmap.getHeight());
+		centerVertical(bitmap.getHeight(),bitmap.getWidth());
 
 	}
 
-	private void centerVertical(int bitmapHeight) {
+	private void centerVertical(int bitmapHeight,int bitmapWidth) {
 		int screenHeight = getResources().getDisplayMetrics().heightPixels;
+		int screenWidth = getResources().getDisplayMetrics().widthPixels;
         int centerHeight= (screenHeight-bitmapHeight)/2;
+        int centerWidth= (screenWidth-bitmapWidth)/2;
 		Matrix translateMatrix = new Matrix();
-		translateMatrix.postTranslate(0, centerHeight);
+
+		translateMatrix.postTranslate(centerWidth,centerHeight);
 		Matrix imageMatrix = new Matrix(getImageMatrix());
 		imageMatrix.postConcat(translateMatrix);
 		setImageMatrix(imageMatrix);

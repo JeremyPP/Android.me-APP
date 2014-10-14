@@ -72,6 +72,8 @@ public class ArticleImageExpanded extends Activity  {
 		getActionBar().hide();
 		
 	}
+	
+  
 
 	
 	
