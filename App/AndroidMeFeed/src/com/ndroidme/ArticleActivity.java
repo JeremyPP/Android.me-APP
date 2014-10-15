@@ -95,7 +95,7 @@ public class ArticleActivity extends Activity {
 		String writer = (getText(R.string.article_writer) + " " + "<b>" + mArticle.getWriter() + "</b>").toUpperCase();
 		String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
 		tvDate.setText(Html.fromHtml(writer + " | " + date));
-		
+		wvFrom.setText(mArticle.getFrom().get(0));
 		
 		
 		String url= mArticle.getContentUrl(isTablet());
@@ -103,9 +103,17 @@ public class ArticleActivity extends Activity {
 		
 		wvContent.loadUrl(url);
 		//vvVideo.setVideoURI(Uri.parse(mArticle.getVideoUrl()));
-		wvVideo.loadDataWithBaseURL("http://ndroid.me", mArticle.getVideoUrl(), "text/html", "UTF-8", null);
-		//wvContent.loadUrl("http://www.codingzebra.com/TestEmbedYouTube.html");
-		wvFrom.setText(mArticle.getFrom().get(0));
+		String videoUrl= mArticle.getVideoUrl();
+		if(videoUrl!=null)
+		{
+		wvVideo.loadDataWithBaseURL("http://ndroidme.com", videoUrl, "text/html", "UTF-8", null);
+		}
+		else
+		{
+			wvVideo.setVisibility(View.GONE);
+		}
+		//wvContent.loadUrl("http://www.codi		wvFrom.setText(mArticle.getFrom().get(0));ngzebra.com/TestEmbedYouTube.html");
+
 		wvFrom.setOnClickListener(new View.OnClickListener() {
 			
 			@Override

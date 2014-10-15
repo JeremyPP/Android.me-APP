@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
@@ -53,6 +54,7 @@ import android.util.Log;
 public class ArticleManager {
 
 	private String mUrl;
+	private HttpReader httpReader;
 	
 	/**
 	 * Main constructor
@@ -61,6 +63,7 @@ public class ArticleManager {
 	 */
 	public ArticleManager(String url) {
 		this.mUrl = url;
+		httpReader = new HttpReader();
 	}
 	
 	/**
@@ -76,6 +79,7 @@ public class ArticleManager {
 	    StringBuilder sb = new StringBuilder();
 	    int bufferSize=1024;
 	    char[] buffer=new char[bufferSize];
+	    
 	    while (true)
 	    {
 	      int charsRead= rd.read(buffer);
@@ -88,10 +92,32 @@ public class ArticleManager {
 	    	  break;
 	      }
 	      sb.append(buffer);
+	    	
 	    }
 	    return sb.toString();
 	}	
-
+	private String readIt(InputStream stream) throws IOException, UnsupportedEncodingException {
+	    Reader reader = null;
+	    reader = new InputStreamReader(stream, "UTF-8");
+	    
+	    int result=500;
+	    StringBuilder webString= new StringBuilder();
+	    while(true)
+	    {
+	    	int buffer=-41;
+	    	 buffer=reader.read();
+	    	 if(buffer==-1)
+	    	 {
+	    		 break;
+	    	 
+	    	 }
+	    	 webString.append((char)buffer);
+	    	
+	    }
+	    
+	    return webString.toString();
+	    
+	}
 	private String getTags(List<String> tags) {
 		if (tags == null) return "";
 		StringBuilder s = new StringBuilder();
@@ -115,11 +141,15 @@ public class ArticleManager {
 	 * 		Article you want to infer 
 	 */
 	public void getMoreInfo(Article article) throws Exception {
-		InputStream inputStream = new URL(String.format(mUrl + "post=%d", article.getId())).openStream();
+		String url=String.format(mUrl + "post=%d", article.getId());
+		//HttpReader reader= new HttpReader();
+		
+		BufferedReader bufferedReader=null;
 		try {
-			BufferedReader bufferedReader = new BufferedReader(
-					new InputStreamReader(inputStream, Charset.forName("UTF-8")));
-			String jsonText = readAll(bufferedReader);
+			/*bufferedReader = new BufferedReader(
+					new InputStreamReader(inputStream, Charset.forName("UTF-8")));*/
+			String jsonText = httpReader.downloadUrl(url);
+			//String jsonText= readIt(inputStream);
 			JSONObject allContent = new JSONObject(jsonText);
 			int sucess = allContent.getInt("sucess");
 			if (sucess == 0)
@@ -139,7 +169,8 @@ public class ArticleManager {
 			article.setFrom(listOfFrom);
 			article.extractVideoURL();
 		} finally { 
-			inputStream.close();
+		   
+		   
 		}
 	}
 
@@ -161,11 +192,10 @@ public class ArticleManager {
 		} else {
 			url = String.format(mUrl + "limit=20&skip=%d&tags=%s", startingIndex, getTags(tags));
 		}
-		InputStream inputStream = new URL(url).openStream();
+		//InputStream inputStream = new URL(url).openStream();
+		BufferedReader bufferedReader=null;
 	    try {
-	      BufferedReader bufferedReader = new BufferedReader(
-	    		  new InputStreamReader(inputStream, Charset.forName("UTF-8")));
-	      String jsonText = readAll(bufferedReader);
+          String jsonText = httpReader.downloadUrl(url);
 	      JSONObject allContent = new JSONObject(jsonText);
 	      int sucess = allContent.getInt("sucess");
 	      if (sucess == 0)
@@ -190,7 +220,7 @@ public class ArticleManager {
 	    	  list.add(new Article(id, null, null, title, resume, null, date,null, photoUrl, countComments, countLikes));
 	      }
 	    } finally {
-	      inputStream.close();
+	      //bufferedReader.close();
 	    }
 	    Article[] array = new Article[list.size()];
 	    list.toArray(array);

@@ -31,4 +31,11 @@
 		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/com/ndroidme/HttpReader.java</name>
+			<type>1</type>
+			<location>C:/Users/Michael/git/Android.me-APP/App/AndroidMeFeed/src/com/ndroidme/HttpReader.java</location>
+		</link>
+	</linkedResources>
 </projectDescription>
