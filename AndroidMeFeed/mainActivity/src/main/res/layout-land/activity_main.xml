@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/main_drawer_layout"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clipToPadding="false"
+	android:background="#dadada" >
+    <!-- Main content -->
+    <FrameLayout
+        android:id="@+id/main_right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    <RelativeLayout
+	        android:id="@+id/main_right_layout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	        <ProgressBar
+		        android:id="@+id/main_loading_list"
+		        style="?android:attr/progressBarStyleLarge"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:visibility="gone" />
+	        <android.support.v4.widget.SwipeRefreshLayout
+	            android:id="@+id/pull_to_refresh"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_above="@+id/main_loading_list">
+	        <com.etsy.android.grid.StaggeredGridView
+	            xmlns:app="http://schemas.android.com/apk/res-auto"
+	            android:id="@+id/main_listView"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            app:column_count_landscape="@integer/landscape"
+	            app:column_count_portrait="@integer/portrait"
+	            app:grid_paddingLeft="-15dp"
+	            app:grid_paddingRight="-15dp"
+	            app:item_margin="12dp"
+	            android:paddingLeft="@dimen/side_margin"
+	            android:paddingRight="@dimen/side_margin" />
+	        </android.support.v4.widget.SwipeRefreshLayout>
+	        <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+		        android:id="@+id/main_loading"
+		        gpb:type="folding_circles"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        />
+	    </RelativeLayout>
+	    <RelativeLayout
+	        android:id="@+id/main_error"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="#ff4444"
+	        android:padding="10dp"
+	        android:visibility="invisible" >
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center"
+		        android:textColor="#ffffff"
+		        android:text="@string/main_error" />
+	    </RelativeLayout>
+    </FrameLayout>
+    <!-- The navigation drawer -->
+   <!-- <ListView android:id="@+id/main_left_drawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#c8c8c8"
+        android:dividerHeight="0dp"
+        android:background="#F7F7F7"/>-->
+</android.support.v4.widget.DrawerLayout>
+</FrameLayout>
