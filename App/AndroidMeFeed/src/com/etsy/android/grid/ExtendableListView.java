@@ -2671,7 +2671,8 @@ public abstract class ExtendableListView extends AbsListView {
     public Parcelable onSaveInstanceState() {
 
         Parcelable superState = super.onSaveInstanceState();
-        ListSavedState ss = new ListSavedState(superState);
+        ListSavedState ss;
+        ss = new ListSavedState(superState);
 
         if (mSyncState != null) {
             // Just keep what we last restored.

@@ -9,7 +9,7 @@ package com.ndroidme;
 
 public final class R {
     public static final class array {
-        public static final int google_colors=0x7f060000;
+        public static final int google_colors=0x7f050000;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -102,27 +102,27 @@ containing a value of this type.
         public static final int type=0x7f010000;
     }
     public static final class bool {
-        public static final int adust_image_view=0x7f080000;
-        public static final int tablet=0x7f080001;
-        public static final int transparent_nav=0x7f080002;
+        public static final int adust_image_view=0x7f070000;
+        public static final int tablet=0x7f070001;
+        public static final int transparent_nav=0x7f070002;
     }
     public static final class color {
-        public static final int blue=0x7f050001;
-        public static final int drawer_gray=0x7f050009;
-        public static final int drawer_purple=0x7f05000a;
-        public static final int green=0x7f050003;
-        public static final int image_expanded_background=0x7f050008;
-        public static final int red=0x7f050000;
+        public static final int blue=0x7f040001;
+        public static final int drawer_gray=0x7f040009;
+        public static final int drawer_purple=0x7f04000a;
+        public static final int green=0x7f040003;
+        public static final int image_expanded_background=0x7f040008;
+        public static final int red=0x7f040000;
         /**  <color name="swipe_color_1">#B6DB49</color>
     <color name="swipe_color_2">#99CC00</color>
     <color name="swipe_color_3">#8ABD00</color>
     <color name="swipe_color_4">#7CAF00</color> 
          */
-        public static final int swipe_color_1=0x7f050004;
-        public static final int swipe_color_2=0x7f050005;
-        public static final int swipe_color_3=0x7f050006;
-        public static final int swipe_color_4=0x7f050007;
-        public static final int yellow=0x7f050002;
+        public static final int swipe_color_1=0x7f040004;
+        public static final int swipe_color_2=0x7f040005;
+        public static final int swipe_color_3=0x7f040006;
+        public static final int swipe_color_4=0x7f040007;
+        public static final int yellow=0x7f040002;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -131,18 +131,18 @@ containing a value of this type.
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f090000;
-        public static final int activity_vertical_margin=0x7f090001;
-        public static final int article_title_size=0x7f090006;
-        public static final int fontSize=0x7f090005;
-        public static final int offset_width=0x7f090004;
-        public static final int shadow_width=0x7f090003;
+        public static final int activity_horizontal_margin=0x7f080000;
+        public static final int activity_vertical_margin=0x7f080001;
+        public static final int article_title_size=0x7f080006;
+        public static final int fontSize=0x7f080005;
+        public static final int offset_width=0x7f080004;
+        public static final int shadow_width=0x7f080003;
         /** 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw600dp devices (e.g. 7" tablets) here.
     
          */
-        public static final int side_margin=0x7f090002;
+        public static final int side_margin=0x7f080002;
     }
     public static final class drawable {
         public static final int drawer_button=0x7f020000;
@@ -172,53 +172,53 @@ containing a value of this type.
         public static final int staggered=0x7f020018;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f04001b;
-        public static final int action_view_in_browser=0x7f040029;
-        public static final int article_imgPhoto=0x7f040002;
-        public static final int article_loading=0x7f040009;
-        public static final int article_scroll=0x7f040001;
-        public static final int article_tvDate=0x7f040004;
-        public static final int article_tvFrom=0x7f040007;
-        public static final int article_tvTitle=0x7f040003;
-        public static final int article_wvContent=0x7f040005;
-        public static final int article_wvFrom=0x7f040008;
-        public static final int article_wvVideo=0x7f040006;
-        public static final int drawer_imgIcon=0x7f04001e;
-        public static final int drawer_layout=0x7f04001d;
-        public static final int drawer_tvText=0x7f04001f;
-        public static final int folding_circles=0x7f040000;
-        public static final int image_expanded=0x7f04001c;
-        public static final int list_divider=0x7f040024;
-        public static final int list_imgPhoto=0x7f040021;
-        public static final int list_loading=0x7f040022;
-        public static final int list_tvComments=0x7f040026;
-        public static final int list_tvLikes=0x7f040025;
-        public static final int list_tvResume=0x7f040023;
-        public static final int list_tvTitle=0x7f040020;
-        public static final int main_drawer_layout=0x7f04000a;
-        public static final int main_error=0x7f040010;
-        public static final int main_left_drawer=0x7f040011;
-        public static final int main_listView=0x7f04000e;
-        public static final int main_loading=0x7f04000f;
-        public static final int main_loading_list=0x7f040012;
-        public static final int main_right_layout=0x7f04000b;
-        public static final int main_right_layout1=0x7f04000c;
-        public static final int menu_share=0x7f040028;
-        public static final int noconnection_imgCloud=0x7f040013;
-        public static final int noconnection_tvLoad=0x7f040014;
-        public static final int noconnection_tvRetry=0x7f040015;
-        public static final int progress_bar_text=0x7f040027;
-        public static final int pull_to_refresh=0x7f04000d;
-        public static final int settings_cbCache=0x7f04001a;
-        public static final int settings_cbNotifications=0x7f040018;
-        public static final int settings_layout=0x7f040016;
-        public static final int settings_tvCache=0x7f040019;
-        public static final int settings_tvNotifications=0x7f040017;
+        public static final int LinearLayout1=0x7f0c001b;
+        public static final int action_view_in_browser=0x7f0c0029;
+        public static final int article_imgPhoto=0x7f0c0002;
+        public static final int article_loading=0x7f0c0009;
+        public static final int article_scroll=0x7f0c0001;
+        public static final int article_tvDate=0x7f0c0004;
+        public static final int article_tvFrom=0x7f0c0007;
+        public static final int article_tvTitle=0x7f0c0003;
+        public static final int article_wvContent=0x7f0c0005;
+        public static final int article_wvFrom=0x7f0c0008;
+        public static final int article_wvVideo=0x7f0c0006;
+        public static final int drawer_imgIcon=0x7f0c001e;
+        public static final int drawer_layout=0x7f0c001d;
+        public static final int drawer_tvText=0x7f0c001f;
+        public static final int folding_circles=0x7f0c0000;
+        public static final int image_expanded=0x7f0c001c;
+        public static final int list_divider=0x7f0c0024;
+        public static final int list_imgPhoto=0x7f0c0021;
+        public static final int list_loading=0x7f0c0022;
+        public static final int list_tvComments=0x7f0c0026;
+        public static final int list_tvLikes=0x7f0c0025;
+        public static final int list_tvResume=0x7f0c0023;
+        public static final int list_tvTitle=0x7f0c0020;
+        public static final int main_drawer_layout=0x7f0c000a;
+        public static final int main_error=0x7f0c0010;
+        public static final int main_left_drawer=0x7f0c0011;
+        public static final int main_listView=0x7f0c000e;
+        public static final int main_loading=0x7f0c000f;
+        public static final int main_loading_list=0x7f0c0012;
+        public static final int main_right_layout=0x7f0c000b;
+        public static final int main_right_layout1=0x7f0c000c;
+        public static final int menu_share=0x7f0c0028;
+        public static final int noconnection_imgCloud=0x7f0c0013;
+        public static final int noconnection_tvLoad=0x7f0c0014;
+        public static final int noconnection_tvRetry=0x7f0c0015;
+        public static final int progress_bar_text=0x7f0c0027;
+        public static final int pull_to_refresh=0x7f0c000d;
+        public static final int settings_cbCache=0x7f0c001a;
+        public static final int settings_cbNotifications=0x7f0c0018;
+        public static final int settings_layout=0x7f0c0016;
+        public static final int settings_tvCache=0x7f0c0019;
+        public static final int settings_tvNotifications=0x7f0c0017;
     }
     public static final class integer {
-        public static final int default_type=0x7f070000;
-        public static final int landscape=0x7f070002;
-        public static final int portrait=0x7f070001;
+        public static final int default_type=0x7f060000;
+        public static final int landscape=0x7f060002;
+        public static final int portrait=0x7f060001;
     }
     public static final class layout {
         public static final int activity_article=0x7f030000;
@@ -231,43 +231,43 @@ containing a value of this type.
         public static final int progress_bar=0x7f030007;
     }
     public static final class menu {
-        public static final int main=0x7f0c0000;
+        public static final int main=0x7f0b0000;
     }
     public static final class string {
-        public static final int action_likes=0x7f0a0003;
-        public static final int action_settings=0x7f0a0002;
-        public static final int app_name=0x7f0a0001;
-        public static final int article_comments=0x7f0a000b;
-        public static final int article_date=0x7f0a0008;
-        public static final int article_from=0x7f0a000d;
-        public static final int article_likes=0x7f0a000c;
-        public static final int article_next=0x7f0a000a;
-        public static final int article_previous=0x7f0a0009;
-        public static final int article_writer=0x7f0a0007;
-        public static final int drawer_close=0x7f0a001d;
-        public static final int drawer_open=0x7f0a001c;
-        public static final int error_message=0x7f0a0010;
-        public static final int error_title=0x7f0a000f;
-        public static final int loading=0x7f0a000e;
-        public static final int loading_=0x7f0a0021;
-        public static final int main_error=0x7f0a001b;
-        public static final int noconnection_load=0x7f0a0019;
-        public static final int noconnection_retry=0x7f0a001a;
-        public static final int notification_text=0x7f0a0005;
-        public static final int notification_ticker=0x7f0a0006;
-        public static final int notification_title=0x7f0a0004;
-        public static final int settings_about=0x7f0a0012;
-        public static final int settings_build=0x7f0a0017;
-        public static final int settings_build_version=0x7f0a0018;
-        public static final int settings_cache=0x7f0a0015;
-        public static final int settings_cache_description=0x7f0a0016;
-        public static final int settings_general=0x7f0a0011;
-        public static final int settings_notifications=0x7f0a0013;
-        public static final int settings_notifications_description=0x7f0a0014;
-        public static final int share=0x7f0a001e;
-        public static final int share_provider=0x7f0a001f;
-        public static final int site_name=0x7f0a0000;
-        public static final int view_in_browser=0x7f0a0020;
+        public static final int action_likes=0x7f090003;
+        public static final int action_settings=0x7f090002;
+        public static final int app_name=0x7f090001;
+        public static final int article_comments=0x7f09000b;
+        public static final int article_date=0x7f090008;
+        public static final int article_from=0x7f09000d;
+        public static final int article_likes=0x7f09000c;
+        public static final int article_next=0x7f09000a;
+        public static final int article_previous=0x7f090009;
+        public static final int article_writer=0x7f090007;
+        public static final int drawer_close=0x7f09001d;
+        public static final int drawer_open=0x7f09001c;
+        public static final int error_message=0x7f090010;
+        public static final int error_title=0x7f09000f;
+        public static final int loading=0x7f09000e;
+        public static final int loading_=0x7f090021;
+        public static final int main_error=0x7f09001b;
+        public static final int noconnection_load=0x7f090019;
+        public static final int noconnection_retry=0x7f09001a;
+        public static final int notification_text=0x7f090005;
+        public static final int notification_ticker=0x7f090006;
+        public static final int notification_title=0x7f090004;
+        public static final int settings_about=0x7f090012;
+        public static final int settings_build=0x7f090017;
+        public static final int settings_build_version=0x7f090018;
+        public static final int settings_cache=0x7f090015;
+        public static final int settings_cache_description=0x7f090016;
+        public static final int settings_general=0x7f090011;
+        public static final int settings_notifications=0x7f090013;
+        public static final int settings_notifications_description=0x7f090014;
+        public static final int share=0x7f09001e;
+        public static final int share_provider=0x7f09001f;
+        public static final int site_name=0x7f090000;
+        public static final int view_in_browser=0x7f090020;
     }
     public static final class style {
         /** 
@@ -280,19 +280,19 @@ containing a value of this type.
         res/values-v11/styles.xml on API 19+ devices.
     
          */
-        public static final int AppBaseTheme=0x7f0b0008;
-        public static final int ArticleTitleTextAppearance=0x7f0b0007;
-        public static final int Overflow=0x7f0b0004;
-        public static final int Theme_TranslucentActionBar=0x7f0b0000;
-        public static final int Theme_TranslucentActionBar_ActionBar=0x7f0b0001;
-        public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f0b0002;
+        public static final int AppBaseTheme=0x7f0a0008;
+        public static final int ArticleTitleTextAppearance=0x7f0a0007;
+        public static final int Overflow=0x7f0a0004;
+        public static final int Theme_TranslucentActionBar=0x7f0a0000;
+        public static final int Theme_TranslucentActionBar_ActionBar=0x7f0a0001;
+        public static final int Theme_TranslucentActionBar_ActionBar_Overlay=0x7f0a0002;
         /**   <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_background</item>
     </style> 
          */
-        public static final int Widget_ActionBar=0x7f0b0003;
-        public static final int Widget_ActionBar_TextAppearance=0x7f0b0005;
-        public static final int Widget_ActionBar_Transparent=0x7f0b0006;
+        public static final int Widget_ActionBar=0x7f0a0003;
+        public static final int Widget_ActionBar_TextAppearance=0x7f0a0005;
+        public static final int Widget_ActionBar_Transparent=0x7f0a0006;
     }
     public static final class styleable {
         /** Attributes that can be used with a GoogleProgressBar.

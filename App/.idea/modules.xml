@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidMeFeed/AndroidMeFeed.iml" filepath="$PROJECT_DIR$/AndroidMeFeed/AndroidMeFeed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoogleProgressBar/GoogleProgressBar.iml" filepath="$PROJECT_DIR$/GoogleProgressBar/GoogleProgressBar.iml" />
     </modules>
   </component>
 </project>
