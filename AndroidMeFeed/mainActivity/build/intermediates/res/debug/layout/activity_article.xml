@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<com.ndroidme.NotifyingScrollView  
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/article_scroll"
+	    android:background="#ffffff" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical">
+	        <ImageView 
+			    android:id="@+id/article_imgPhoto"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:adjustViewBounds="true"
+			    android:scaleType="centerCrop"
+			    android:paddingTop="0dp" />
+	        <TextView
+		        android:id="@+id/article_tvTitle"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="@style/ArticleTitleTextAppearance"
+		        android:paddingTop="10dp"
+		        android:paddingLeft="15dp"
+		        android:paddingRight="15dp" />
+		    <TextView
+		        android:id="@+id/article_tvDate"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:paddingTop="10dp"
+		        android:paddingLeft="15dp"
+		        android:paddingRight="15dp"
+		        android:textColor="#7878c8" />
+		    <WebView
+		        android:id="@+id/article_wvContent"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="@dimen/fontSize"
+		        android:paddingLeft="15dp"
+		        android:paddingRight="15dp"  />
+       	    <WebView
+ 		        android:id="@+id/article_wvVideo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+		        android:paddingRight="15dp"  />
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" 
+		        android:orientation="horizontal"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginBottom="10dp" >
+		        <TextView
+		            android:id="@+id/article_tvFrom"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            android:background="#6472CD"
+		            android:textColor="#ffffff"
+		            android:text="@string/article_from"
+		            android:visibility="invisible" />
+		        <TextView
+		            android:layout_marginLeft="3dp"
+		            android:id="@+id/article_wvFrom"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            android:textColor="#535353"
+		            android:visibility="invisible"
+		            android:background="#cecece"
+		            android:clickable="true" />
+		    </LinearLayout>
+	    </LinearLayout>
+	</com.ndroidme.NotifyingScrollView>
+        
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+	        android:id="@+id/article_loading"
+	        gpb:type="folding_circles"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true" />
+	</RelativeLayout>
+
+</FrameLayout>
+<!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/layout/activity_article.xml -->

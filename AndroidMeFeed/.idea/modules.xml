@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidMeFeed.iml" filepath="$PROJECT_DIR$/AndroidMeFeed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/googleProgressBar/googleProgressBar.iml" filepath="$PROJECT_DIR$/googleProgressBar/googleProgressBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainActivity/mainActivity.iml" filepath="$PROJECT_DIR$/mainActivity/mainActivity.iml" />
+    </modules>
+  </component>
+</project>
+

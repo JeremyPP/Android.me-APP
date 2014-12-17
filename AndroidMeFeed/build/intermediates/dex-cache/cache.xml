@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\AndroidMeFeed\googleProgressBar\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="f7b4bb6d00ca9552c904d5bb05eea091ea947c82">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-698b9b00235e99df74fa322e5acc06817c2e5655.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\libs\universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="03e3948d42b8d78961a092a184af66bd86da42e6">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-with-sources-1bc385811c57b1360608e07738722748d0697325.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-97103d8ad2a60524567115242577e6198a375d96.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-f6b34aa37316f23ec260ac8a315a31241aad9489.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-9159001631082caa9d4e7efc6af1fa57cc73443a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\AndroidMeFeed\googleProgressBar\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f7b4bb6d00ca9552c904d5bb05eea091ea947c82">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-698b9b00235e99df74fa322e5acc06817c2e5655.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\libs\universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="03e3948d42b8d78961a092a184af66bd86da42e6">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-with-sources-1bc385811c57b1360608e07738722748d0697325.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\AndroidMeFeed\googleProgressBar\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="2997949c19631a536d3bef5cd5bad89730369b5d">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-698b9b00235e99df74fa322e5acc06817c2e5655.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\libs\universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="03e3948d42b8d78961a092a184af66bd86da42e6">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-with-sources-1bc385811c57b1360608e07738722748d0697325.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ec01004b1f44f37acf9c152b4b804220abcd48f7.jar" />
+    </item>
+
+</items>

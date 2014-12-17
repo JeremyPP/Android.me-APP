@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:state_pressed="false"
+        android:drawable="@drawable/ic_drawer_button_down" />
+    <item android:state_pressed="true"
+        android:drawable="@drawable/ic_drawer_button_down_selected" />
+
+</selector>
+<!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/drawable/drawer_button_down.xml -->

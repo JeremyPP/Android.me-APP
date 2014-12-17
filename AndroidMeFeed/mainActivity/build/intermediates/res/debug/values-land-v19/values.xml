@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/values-land-v19/bools.xml -->
+    <eat-comment/>
+    <bool name="transparent_nav">true</bool>
+</resources>

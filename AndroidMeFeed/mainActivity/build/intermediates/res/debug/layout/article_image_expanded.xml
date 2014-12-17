@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/image_expanded_background"
+    android:orientation="vertical" >
+
+    <com.ndroidme.ZoomView
+        android:id="@+id/image_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        />
+
+    <!--
+         <WebView
+        android:id="@+id/image_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+    -->
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/layout/article_image_expanded.xml -->

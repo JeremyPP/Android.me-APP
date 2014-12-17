@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item> 
+    <shape android:shape="rectangle">
+    <stroke
+        android:width="5dip"
+        android:color="#4f598e"
+    />
+    <padding
+        android:bottom="0dip"
+        android:left="0dip"
+        android:right="0dip"
+        android:top="0dip"
+    />
+    </shape>
+  </item>   
+    <item android:bottom="2dp" >  
+     <shape android:shape="rectangle"> 
+      <solid android:color="#6472CD" />
+    </shape>
+   </item>    
+ </layer-list><!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/drawable/ic_action_bar.xml -->

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:nme="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_share"
+        android:title="@string/share"
+
+        nme:actionProviderClass="@string/share_provider"
+        android:enabled="true" android:visible="true"/>
+    <item android:id="@+id/action_view_in_browser" android:title="@string/view_in_browser"/>
+    <item    android:id="@+id/contact"
+        android:title="Contact"
+        />
+
+    <item android:id="@+id/action_settings"
+          android:title="Settings"
+          />
+    <item android:id="@+id/about"
+          android:title="About" />
+
+</menu><!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/menu/main.xml -->

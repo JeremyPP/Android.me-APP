@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:padding="10dp"> -->
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_general" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c9c9c9"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+        <TextView
+            android:id="@+id/settings_tvNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/settings_cbNotifications"
+            android:textSize="20sp"
+            android:text="@string/settings_notifications" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_tvNotifications"
+            android:layout_toLeftOf="@+id/settings_cbNotifications"
+            android:text="@string/settings_notifications_description" />
+        <CheckBox
+            android:id="@+id/settings_cbNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c9c9"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+	<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  >
+        <TextView
+            android:id="@+id/settings_tvCache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/settings_cbCache"
+            android:textSize="20sp"
+            android:text="@string/settings_cache" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_tvCache"
+            android:layout_toLeftOf="@+id/settings_cbCache"
+            android:text="@string/settings_cache_description" />
+        <CheckBox
+            android:id="@+id/settings_cbCache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_about" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c9c9c9"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/settings_build" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/settings_build_version" />
+	<!-- </LinearLayout> -->
+</LinearLayout><!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/layout/activity_settings.xml -->

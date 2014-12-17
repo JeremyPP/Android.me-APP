@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/googleProgressBar/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <integer-array name="google_colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </integer-array>
+    <color name="blue">#FF375BF1</color>
+    <color name="green">#FF34A350</color>
+    <color name="red">#FFC93437</color>
+    <color name="yellow">#FFF7D23E</color>
+    <declare-styleable name="GoogleProgressBar"><attr format="enum" name="type"><enum name="folding_circles" value="0"/></attr><attr format="reference" name="colors"/></declare-styleable>
+    <integer name="default_type">0</integer>
+</resources>

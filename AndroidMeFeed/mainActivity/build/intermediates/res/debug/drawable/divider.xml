@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="line">
+    <stroke
+        android:color="@color/gray"
+        android:width="10dp"
+        />
+    <size
+        android:height="2dp"
+        />
+
+
+
+</shape><!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/drawable/divider.xml -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/values-sw600dp/bools.xml -->
+    <eat-comment/>
+    <bool name="tablet">true</bool>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-sw600dp/values.xml -->
+    <eat-comment/>
+    <dimen name="abc_action_bar_default_height_material">64dp</dimen>
+    <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
+    <dimen name="abc_config_prefDialogWidth">580dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="article_title_size">30sp</dimen>
+    <dimen name="side_margin">12dp</dimen>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-sw600dp/values.xml -->
+    <eat-comment/>
+    <integer name="abc_max_action_buttons">5</integer>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/values-sw600dp/column_count.xml -->
+    <eat-comment/>
+    <integer name="landscape">3</integer>
+    <integer name="portrait">2</integer>
+    <!-- From: file:/C:/Users/Michael/git/Android.me-APP/AndroidMeFeed/mainActivity/src/main/res/values-sw600dp/styles.xml -->
+    <eat-comment/>
+    <style name="ArticleTitleTextAppearance" parent="@android:style/TextAppearance.Large">
+       <item name="android:textSize">@dimen/article_title_size</item>
+   </style>
+</resources>
