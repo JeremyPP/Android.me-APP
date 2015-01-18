@@ -1868,7 +1868,11 @@
       <created>1421622592053</created>
       <updated>1421622592053</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed errors with Lollipop and settings page">
+      <created>1421622622184</created>
+      <updated>1421622622184</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
