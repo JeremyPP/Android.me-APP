@@ -45,10 +45,10 @@
     <string name="codingzebra">http://www.codingzebra.com</string>
     <string name="designer"><b>Designer:</b> Jeremey Pougnet</string>
     <string name="jeremysite">http://jimy.co</string>
-    <string name="etsy">Etsy Staggered GridView</string>
-    <string name="universal">Universal Image Loader</string>
-    <string name="spinning_google_bar">Google Progress Bar</string>
+    <string name="etsy"><b>Etsy Staggered GridView</b></string>
+    <string name="universal"><b>Universal Image Loader</b></string>
+    <string name="spinning_google_bar"><b>Google Progress Bar</b></string>
     <string name="libraries"><b>Libraries Used</b></string>
     <string name="copyright">Copyright &#169; 2013 &#8211; 2014 Android.Me All Rights Reserved</string>
-    <string name="thank_you">Thanks to everyone who has made this project come true!</string>
+    <string name="thank_you"><b>Thanks to everyone who has made this project come true!</b></string>
 </resources>
