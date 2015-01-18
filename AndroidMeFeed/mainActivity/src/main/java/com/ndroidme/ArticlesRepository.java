@@ -80,6 +80,7 @@ public class ArticlesRepository {
 				cursor.moveToNext();
 			}
 		}
+        cursor.close();
 		return tree;
 	}
 

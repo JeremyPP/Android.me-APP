@@ -53,12 +53,360 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="ImageLoader" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="ndroid" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4748a728-e49d-4e8e-9e5b-b1ea406b9182" name="Default" comment="Migrated to Android Studio, added about page  and changed to Material Design">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/build/intermediates/exploded-aar/AndroidMeFeed/googleProgressBar/unspecified/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mainActivity/build/intermediates/exploded-aar/AndroidMeFeed/googleProgressBar/unspecified/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/src/main/res/values-v21/styles.xml" afterPath="$PROJECT_DIR$/mainActivity/src/main/res/values-v21/styles.xml" />
+    <list default="true" id="4748a728-e49d-4e8e-9e5b-b1ea406b9182" name="Default" comment="fixed errors with Lollipop and settings page">
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\R.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\anim\abc_fade_in.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\anim\abc_fade_out.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\anim\abc_slide_in_bottom.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\anim\abc_slide_in_top.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\anim\abc_slide_out_bottom.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\anim\abc_slide_out_top.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_background_cache_hint_selector_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_background_cache_hint_selector_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_primary_text_disable_only_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_primary_text_disable_only_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_primary_text_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_primary_text_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_search_url_text.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_secondary_text_material_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\color\abc_secondary_text_material_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ab_share_pack_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ab_share_pack_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-hdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-hdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-hdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-hdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-mdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-mdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-mdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-ldrtl-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ab_share_pack_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ab_share_pack_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-mdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ab_share_pack_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ab_share_pack_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xhdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ab_share_pack_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ab_share_pack_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_cab_background_top_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_commit_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_go_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_menu_share_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_list_divider_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_popup_background_mtrl_mult.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_textfield_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_textfield_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_textfield_search_activated_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxhdpi\abc_textfield_search_default_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_000.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_015.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_clear_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_menu_selectall_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_ic_voice_search_api_mtrl_alpha.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_switch_track_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable-xxxhdpi\abc_tab_indicator_mtrl_alpha.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_btn_check_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_btn_radio_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_cab_background_internal_bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_cab_background_top_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_edit_text_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_item_background_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_item_background_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_list_selector_background_transition_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_list_selector_background_transition_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_list_selector_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_list_selector_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_switch_thumb_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_tab_indicator_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\drawable\abc_textfield_search_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout-v11\abc_screen_content_include.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_action_bar_title_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_action_bar_up_container.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_action_bar_view_list_nav_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_action_menu_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_action_menu_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_action_mode_bar.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_action_mode_close_item_material.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_activity_chooser_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_activity_chooser_view_include.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_activity_chooser_view_list_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_expanded_menu_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_list_menu_item_checkbox.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_list_menu_item_icon.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_list_menu_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_list_menu_item_radio.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_popup_menu_item_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_screen_content_include.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_screen_simple.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_screen_simple_overlay_action_mode.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_screen_toolbar.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_search_dropdown_item_icons_2line.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_search_view.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\abc_simple_dropdown_hint.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\layout\support_simple_spinner_dropdown_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-af\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-am\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ar\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-bg\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-bn-rBD\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ca\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-cs\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-da\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-de\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-el\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-en-rGB\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-en-rIN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-es-rUS\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-es\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-et-rEE\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-eu-rES\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-fa\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-fi\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-fr-rCA\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-fr\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-gl-rES\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-hi\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-hr\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-hu\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-hy-rAM\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-in\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-is-rIS\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-it\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-iw\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ja\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ka-rGE\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-kk-rKZ\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-km-rKH\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-kn-rIN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ko\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ky-rKG\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-land\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-large\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-lo-rLA\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-lt\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-lv\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-mk-rMK\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ml-rIN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-mn-rMN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-mr-rIN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ms-rMY\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-my-rMM\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-nb\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ne-rNP\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-nl\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-pl\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-port\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-pt-rPT\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-pt\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ro\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ru\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-si-rLK\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-sk\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-sl\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-sr\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-sv\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-sw600dp\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-sw\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ta-rIN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-te-rIN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-th\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-tl\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-tr\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-uk\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-ur-rPK\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-uz-rUZ\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-v11\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-v14\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-v17\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-v21\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-vi\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-w360dp\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-w480dp\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-w500dp\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-w600dp\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-w720dp\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-xlarge-land\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-xlarge\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-zh-rCN\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-zh-rHK\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-zh-rTW\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values-zu\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\res\values\values.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\aidl\android\support\v4\app\INotificationSideChannel.aidl" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\src\main\res\values-v21\styles.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/build/intermediates/exploded-aar/AndroidMeFeed/googleProgressBar/unspecified/classes.jar" afterPath="$PROJECT_DIR$/mainActivity/build/intermediates/exploded-aar/AndroidMeFeed/googleProgressBar/unspecified/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java" afterPath="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticlesRepository.java" afterPath="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticlesRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java" afterPath="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_settings.xml" afterPath="$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/mainActivity.iml" afterPath="$PROJECT_DIR$/mainActivity/mainActivity.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/mainActivity/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainActivity/src/main/res/values-v19/styles.xml" afterPath="$PROJECT_DIR$/mainActivity/src/main/res/values-v19/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/universal_image_loader_1_9_3_with_sources.xml" afterPath="$PROJECT_DIR$/.idea/libraries/universal_image_loader_1_9_3_with_sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndroidMeFeed.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,84 +434,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainActivity/build.gradle">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="544">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4686" max-vertical-offset="7276">
+              <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/HttpReader.java">
+      <file leaf-file-name="ActivityThread.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/android/app/ActivityThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1785">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="37349" max-vertical-offset="88927">
+              <caret line="2197" column="0" selection-start-line="2197" selection-start-column="0" selection-end-line="2197" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_main.xml">
+      <file leaf-file-name="activity_about_page.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_about_page.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1530">
-              <caret line="73" column="22" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="731">
-              <caret line="1" column="69" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values-v21/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values-v19/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="991">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2431">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyListAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MyListAdapter.java">
+      <file leaf-file-name="ArticleActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1479">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2153" max-vertical-offset="5185">
+              <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleImageLoadingListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/mainActivity/libs/universal-image-loader-1.9.3-with-sources.jar!/com/nostra13/universalimageloader/core/listener/SimpleImageLoadingListener.java">
+      <file leaf-file-name="ArticleImageExpanded.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleImageExpanded.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="952">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1394">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZygoteInit.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/com/android/internal/os/ZygoteInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="14040" max-vertical-offset="14790">
+              <caret line="904" column="0" selection-start-line="904" selection-start-column="0" selection-end-line="904" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1310212" vertical-offset="0" max-vertical-offset="714">
+              <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -1032,7 +1370,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/AndroidStudioProjects/android-gesture-sample" value="4239734608899" />
-        <entry key="$PROJECT_DIR$" value="5670184983953" />
+        <entry key="$PROJECT_DIR$" value="5673302078592" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1047,12 +1385,12 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.0.0/builder-1.0.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.0.0/builder-model-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.0.0/builder-1.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.0.0/builder-model-1.0.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
@@ -1064,12 +1402,12 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.0.0/builder-1.0.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.0.0/builder-model-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.0.0/builder-1.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.0.0/builder-model-1.0.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/googleProgressBar" />
@@ -1081,12 +1419,12 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.0.0/builder-1.0.0-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.0.0/builder-model-1.0.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/1.0.0/builder-1.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/1.0.0/builder-model-1.0.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.0.0/gradle-1.0.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/mainActivity" />
@@ -1171,33 +1509,35 @@
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/FeedConfig.java" />
         <option value="$USER_HOME$/Development/adt-bundle-windows-x86_64-20140624/sdk/extras/android/support/v7/appcompat/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/values-v11/styles.xml" />
-        <option value="$PROJECT_DIR$/mainActivity/src/main/res/values-v19/styles.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleImageExpanded.java" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/drawable/divider.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/TaskExecutor.java" />
-        <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_about_page.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/FeedService.java" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/TaskExecutorPool.java" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ZoomView.java" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleManager.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/layout-land/activity_main.xml" />
         <option value="$PROJECT_DIR$/mainActivity/build.gradle" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/menu/main.xml" />
-        <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java" />
         <option value="$PROJECT_DIR$/googleProgressBar/build.gradle" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/AboutPage.java" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/NdroidApplication.java" />
         <option value="$PROJECT_DIR$/googleProgressBar/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/HttpReader.java" />
+        <option value="$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_settings.xml" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticlesRepository.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/mainActivity/src/main/res/values-v21/styles.xml" />
+        <option value="$PROJECT_DIR$/mainActivity/src/main/res/values-v19/styles.xml" />
+        <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java" />
+        <option value="$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java" />
       </list>
     </option>
   </component>
@@ -1209,10 +1549,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="503" />
-    <option name="y" value="386" />
-    <option name="width" value="1932" />
-    <option name="height" value="1176" />
+    <option name="x" value="373" />
+    <option name="y" value="20" />
+    <option name="width" value="1918" />
+    <option name="height" value="1158" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1244,7 +1584,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1255,7 +1595,378 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ndroidme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-v19" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ndroidme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidMeFeed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -1272,7 +1983,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/AndroidMeFeed.iml" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="T062805QO8" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Lollipop_API_21" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="174" />
     <property name="LayoutCode.rearrangeEntriesXML" value="true" />
@@ -1321,10 +2032,38 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <configuration default="false" name="MainActivity (1)" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
-      <module name="mainActivity" />
-      <option name="ACTIVITY_CLASS" value="com.ndroidme.MainActivity" />
-      <option name="MODE" value="specific_activity" />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
@@ -1339,17 +2078,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -1373,12 +2101,13 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -1422,46 +2151,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="false" name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="mainActivity" />
       <option name="ACTIVITY_CLASS" value="com.ndroidme.MainActivity" />
@@ -1484,15 +2173,13 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.MainActivity" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All in mainActivity" />
-      <item index="2" class="java.lang.String" itemvalue="Android Application.MainActivity (1)" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Android Application.MainActivity (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in mainActivity" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in mainActivity" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
@@ -1550,69 +2237,69 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="503" y="386" width="1932" height="1176" extended-state="0" />
+    <frame x="373" y="20" width="1918" height="1158" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23650637" sideWeight="0.4945946" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4293948" sideWeight="0.5046875" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3925417" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23931624" sideWeight="0.50049067" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31403336" sideWeight="0.4984375" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33154505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45354646" sideWeight="0.49840087" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23931624" sideWeight="0.50049067" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4288518" sideWeight="0.5046875" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23931624" sideWeight="0.49950933" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.49594596" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31403336" sideWeight="0.49840087" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23650637" sideWeight="0.50586355" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24111949" sideWeight="0.49950933" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777232" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33154505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24075924" sideWeight="0.49413645" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24217118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38469088" sideWeight="0.4978678" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24217118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31697744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.454367" sideWeight="0.4984375" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38469088" sideWeight="0.4978678" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4293948" sideWeight="0.5046875" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3925417" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23931624" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33154505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23931624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.49594596" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777232" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24217118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31697744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23650637" sideWeight="0.4945946" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.454367" sideWeight="0.4984375" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31403336" sideWeight="0.4984375" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23931624" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4293948" sideWeight="0.5046875" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23650637" sideWeight="0.4945946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.454367" sideWeight="0.4984375" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38469088" sideWeight="0.4978678" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24217118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.49594596" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3925417" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31403336" sideWeight="0.4984375" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23931624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777232" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31697744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33154505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1631,7 +2318,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Migrated to Android Studio, added about page  and changed to Material Design" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrated to Android Studio, added about page  and changed to Material Design" />
+    <MESSAGE value="fixed errors with Lollipop and settings page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed errors with Lollipop and settings page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1648,6 +2336,30 @@
           <line>142</line>
           <properties />
           <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java</url>
+          <line>342</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java</url>
+          <line>187</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java</url>
+          <line>349</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java</url>
+          <line>361</line>
+          <properties />
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1666,82 +2378,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="106" />
+      <option name="time" value="114" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/drawable/divider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1003">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/TaskExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34359" max-vertical-offset="85918">
-          <caret line="2195" column="0" selection-start-line="2195" selection-start-column="0" selection-end-line="2195" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_article.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="1734">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_about_page.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1429" max-vertical-offset="2431">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/FeedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2052" max-vertical-offset="2652">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MyDrawerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1071">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.navigation/googleProgressBar/raw/main.nvg.xml">
-      <provider editor-type-id="navigationeditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/etsy/android/grid/HeaderViewListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="4233">
@@ -1763,38 +2403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6361" max-vertical-offset="13481">
-          <caret line="436" column="0" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/android/app/Instrumentation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15571" max-vertical-offset="31280">
-          <caret line="993" column="0" selection-start-line="993" selection-start-column="0" selection-end-line="993" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticlesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/TaskExecutorPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="5474">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1861,13 +2473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/AboutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/googleProgressBar/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
@@ -1919,13 +2524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4481" max-vertical-offset="7242">
-          <caret line="352" column="0" selection-start-line="352" selection-start-column="0" selection-end-line="352" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/Article.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2543" max-vertical-offset="5712">
@@ -1955,43 +2553,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidMeFeed.iml">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/com/android/internal/os/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainActivity/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MyListAdapter.java">
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/HttpReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="1190">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1615">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_settings.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2000,14 +2586,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MyListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="1190">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/android/app/ActivityTransitionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1552" max-vertical-offset="4811">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/AboutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="534" max-vertical-offset="1547">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidMeFeed.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values-v11/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/HttpReader.java">
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values/bools.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1615">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2017,47 +2638,145 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1530">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="1530">
           <caret line="73" column="22" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/com/android/internal/os/styles.xml">
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_article.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_settings.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1819">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="1" column="69" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values-v21/styles.xml">
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticlesRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1989">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/com/android/internal/os/ZygoteInit.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7426842" vertical-offset="13799" max-vertical-offset="14790">
-          <caret line="904" column="0" selection-start-line="904" selection-start-column="0" selection-end-line="904" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/android/app/Instrumentation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="31314">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/layout/activity_about_page.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34226" max-vertical-offset="85918">
+          <caret line="2197" column="0" selection-start-line="2197" selection-start-column="0" selection-end-line="2197" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values-v19/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3430878" vertical-offset="0" max-vertical-offset="991">
+          <caret line="20" column="91" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6295" max-vertical-offset="13481">
+          <caret line="442" column="30" selection-start-line="442" selection-start-column="30" selection-end-line="442" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/TaskExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39455095" vertical-offset="0" max-vertical-offset="991">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-21/com/android/internal/os/ZygoteInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13799" max-vertical-offset="14790">
+          <caret line="904" column="0" selection-start-line="904" selection-start-column="0" selection-end-line="904" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleImageExpanded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1394">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4686" max-vertical-offset="7276">
+          <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/java/com/ndroidme/ArticleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2153" max-vertical-offset="5185">
+          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainActivity/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1310212" vertical-offset="0" max-vertical-offset="714">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
           <folding />
         </state>
       </provider>

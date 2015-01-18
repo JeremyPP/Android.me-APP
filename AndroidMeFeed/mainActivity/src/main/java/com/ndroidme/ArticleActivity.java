@@ -306,15 +306,31 @@ public class ArticleActivity extends ActionBarActivity {
 	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-	        switch (item.getItemId()) {
+	    Intent intent= null;
+        switch (item.getItemId()) {
 	        case android.R.id.home:
 	            onBackPressed();
 	            return true;
 	        case R.id.action_view_in_browser:
-	        	Intent intent= new Intent(Intent.ACTION_VIEW);
+	             intent= new Intent(Intent.ACTION_VIEW);
 	            intent.setData(Uri.parse(mArticle.getArticleUrl()));
 	            startActivity(intent);
 	            return true;
+                case R.id.action_settings:
+                   intent = new Intent(this, SettingsActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.contact:
+                    intent = new Intent(Intent.ACTION_VIEW);
+                    Uri data = Uri.parse("mailto:?subject=" + "contact@ndroidme.com" + "&body=" + "");
+                    intent.setData(data);
+                    startActivity(intent);
+                    break;
+
+                case R.id.about:
+                    intent= new Intent(this,AboutPage.class);
+                    startActivity(intent);
+                    break;
 	        	
 	        	
 	        }

@@ -357,12 +357,14 @@ public class MainActivity extends ActionBarActivity {
 		}
 		if (!sharedPreferences.contains("Cache_Value")) { 
 			savePreferences("Cache_Value", false);
-		}
- 
-		mArticleRepository=new ArticlesRepository(MainActivity.this);
+    }
+
+    mArticleRepository=new ArticlesRepository(MainActivity.this);
 		mIndex = 0;
+
+        setUpList();
 		loadRefreshLayout();
-		setUpList();
+
 		//updateList();
 		
 		FeedService.sDontShow = true;
