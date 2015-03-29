@@ -1,7 +1,0 @@
-C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\classes\debug
-C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ec01004b1f44f37acf9c152b4b804220abcd48f7.jar
-C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-698b9b00235e99df74fa322e5acc06817c2e5655.jar
-C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-f6b34aa37316f23ec260ac8a315a31241aad9489.jar
-C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-with-sources-1bc385811c57b1360608e07738722748d0697325.jar
-C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-9159001631082caa9d4e7efc6af1fa57cc73443a.jar
-C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\mainActivity\build\intermediates\pre-dexed\debug\classes-97103d8ad2a60524567115242577e6198a375d96.jar

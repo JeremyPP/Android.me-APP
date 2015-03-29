@@ -64,7 +64,7 @@ public class ArticleActivity extends ActionBarActivity {
                     handler.post(mShowInfo);
                 }
             } catch (Exception e) {
-                Log.e(MainActivity.TAG,e.getMessage());
+                Log.e("ArticleActivity",e.getMessage());
             }
         }
 
@@ -124,51 +124,62 @@ public class ArticleActivity extends ActionBarActivity {
 		return getResources().getBoolean(R.bool.tablet);
 	}
 	private void showInfo() {
-		ProgressBar bar = (ProgressBar)findViewById(R.id.article_loading);
-		bar.setVisibility(ProgressBar.GONE);
-		tvFrom.setVisibility(TextView.VISIBLE);
-		wvFrom.setVisibility(TextView.VISIBLE);
-		ArticlesRepository.sRepository.insert(mArticle);
-		ImageLoader.getInstance().displayImage(mArticle.getPhotoUrl(), imgPhoto);
+        try
+        {
 
-		tvTitle.setText(mArticle.getTitle());
-		String writer = (getText(R.string.article_writer) + " " + "<b>" + mArticle.getWriter() + "</b>").toUpperCase();
-		String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
-		tvDate.setText(Html.fromHtml(writer + " | " + date));
-		wvFrom.setText(mArticle.getFrom().get(0));
-		
-		
-		String url= mArticle.getContentUrl(isTablet());
+            ProgressBar bar = (ProgressBar) findViewById(R.id.article_loading);
+            bar.setVisibility(ProgressBar.GONE);
+            tvFrom.setVisibility(TextView.VISIBLE);
+            wvFrom.setVisibility(TextView.VISIBLE);
+            ArticlesRepository.sRepository.insert(mArticle);
+            ImageLoader.getInstance().displayImage(mArticle.getPhotoUrl(), imgPhoto);
 
-		
-		wvContent.loadUrl(url);
-		//vvVideo.setVideoURI(Uri.parse(mArticle.getVideoUrl()));
-		String videoUrl= mArticle.getVideoUrl();
-		if(videoUrl!=null)
-		{
-		   wvVideo.loadDataWithBaseURL("http://ndroidme.com", videoUrl, "text/html", "UTF-8", null);
-		}
-		else
-		{
-			wvVideo.setVisibility(View.GONE);
-		}
-		//wvContent.loadUrl("http://www.codi		wvFrom.setText(mArticle.getFrom().get(0));ngzebra.com/TestEmbedYouTube.html");
+            tvTitle.setText(mArticle.getTitle());
+            String writer = (getText(R.string.article_writer) + " " + "<b>" + mArticle.getWriter() + "</b>").toUpperCase();
+            String date = (getText(R.string.article_date) + " " + "<b>" + mArticle.getDate() + "</b>").toUpperCase();
+            tvDate.setText(Html.fromHtml(writer + " | " + date));
+            wvFrom.setText(mArticle.getFrom().get(0));
 
-		wvFrom.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				String url = mArticle.getFrom().get(1);
-				if (!url.startsWith("https://") && !url.startsWith("http://")){
-				    url = "http://" + url;
-				}
-				Intent openUrlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-				startActivity(openUrlIntent);
-			}
-		});
-		//wvFrom.loadData("<a href='"+ mArticle.getFrom().get(1) + "' style='color: #535353; text-decoration: none;'>" + mArticle.getFrom().get(0) + "</a>", "text/html", "utf-8");
-		//wvFrom.setBackgroundColor(Color.parseColor("#cecece"));
-		//wvFrom.reload();
+
+            String url = mArticle.getContentUrl(isTablet());
+
+
+            wvContent.loadUrl(url);
+            //vvVideo.setVideoURI(Uri.parse(mArticle.getVideoUrl()));
+            String videoUrl = mArticle.getVideoUrl();
+            if (videoUrl != null)
+            {
+                wvVideo.loadDataWithBaseURL("http://ndroidme.com", videoUrl, "text/html", "UTF-8", null);
+            }
+            else
+            {
+                wvVideo.setVisibility(View.GONE);
+            }
+            //wvContent.loadUrl("http://www.codi		wvFrom.setText(mArticle.getFrom().get(0));ngzebra.com/TestEmbedYouTube.html");
+
+            wvFrom.setOnClickListener(new View.OnClickListener()
+            {
+
+                @Override
+                public void onClick(View arg0)
+                {
+                    String url = mArticle.getFrom().get(1);
+                    if (!url.startsWith("https://") && !url.startsWith("http://"))
+                    {
+                        url = "http://" + url;
+                    }
+                    Intent openUrlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(openUrlIntent);
+                }
+            });
+            //wvFrom.loadData("<a href='"+ mArticle.getFrom().get(1) + "' style='color: #535353; text-decoration: none;'>" + mArticle.getFrom().get(0) + "</a>", "text/html", "utf-8");
+            //wvFrom.setBackgroundColor(Color.parseColor("#cecece"));
+            //wvFrom.reload();
+        }
+        catch(Exception e)
+        {
+            Log.e("ArticleActivity",e.getMessage());
+        }
 	}
 	private class PhotoListener implements OnClickListener
 	{

@@ -1,26 +1,37 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
-
+    signingConfigs {
+        config {
+            keyAlias 'ndroid.me'
+            keyPassword 'cor23amb'
+            storeFile file('C:/Users/Michael/AndroidStudioProjects/keystores/AndroidMe.jks')
+            storePassword 'cor23amb'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
     defaultConfig {
         applicationId "com.ndroidme"
         minSdkVersion 16
-        targetSdkVersion 21
+        targetSdkVersion 22
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 }
 
 dependencies {
     compile project(':googleProgressBar')
-    compile 'com.android.support:support-v4:21.0.3'
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:appcompat-v7:22.0.0'
     compile files('libs/universal-image-loader-1.9.3-with-sources.jar')
 }

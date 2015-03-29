@@ -154,7 +154,7 @@ public class ArticleManager {
 			
 			String writer = allContent.getString("writer");
 			String content = allContent.getString("content");
-			List<String> listOfFrom = new ArrayList<String>();
+			List<String> listOfFrom = new ArrayList<>();
 			JSONObject from = allContent.getJSONObject("from");
 			listOfFrom.add(from.getString("name"));
 			listOfFrom.add(from.getString("link"));
@@ -185,7 +185,7 @@ public class ArticleManager {
 	 */
 	public Article[] getArticles(int startingIndex, List<String> tags) 
 			throws Exception { 
-		List<Article> list = new LinkedList<Article>();
+		List<Article> list = new LinkedList<>();
 		String url;
 		if (tags == null) {
 			url = String.format(mUrl + "limit=9&skip=%d", startingIndex);

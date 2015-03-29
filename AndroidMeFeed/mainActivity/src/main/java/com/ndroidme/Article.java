@@ -104,7 +104,7 @@ public class Article implements Parcelable {
 	}
 
 	private JSONArray mJsonFrom, mJsonTags;
-	List<String> from;
+
 	private String mTitle, mResume, mContent, mDate, mWriter, mPhotoUrl,mVideoUrl;
 	private int mId, mCountLikes, mCountComments;
 	private List<String> mFrom;
@@ -133,7 +133,7 @@ public class Article implements Parcelable {
 	 * Main constructor
 	 * @param id
 	 * 		Article unique ID
-	 * @param from
+	 * @param listOfFrom
 	 * 		A duple indicating the name and url from where the article was extracted
 	 * @param tags
 	 * 		Keywords indicating to what the article reffers
@@ -166,7 +166,7 @@ public class Article implements Parcelable {
 		this.mPhotoUrl = photoUrl;
 		this.mCountComments = countComments;
 		this.mCountLikes = countLikes;
-		this.from = listOfFrom;
+		this.mFrom = listOfFrom;
 		this.mJsonTags = jsonTags;
 		this.mVideoUrl=null;
 	}
@@ -307,9 +307,9 @@ public class Article implements Parcelable {
 	// Parcelling part
     public Article(Parcel in){
     	int id = in.readInt();//
-    	List<String> from = new ArrayList<String>();//
+    	List<String> from = new ArrayList<>();//
     	in.readStringList(from);//
-    	List<String> tags = new ArrayList<String>();//
+    	List<String> tags = new ArrayList<>();//
     	in.readStringList(tags);//
     	String title = in.readString();//
     	String resume = in.readString();//
@@ -373,7 +373,7 @@ public class Article implements Parcelable {
 	private List<String> getJsonTags() throws JSONException{
 		// TODO Auto-generated method stub
 		
-			List<String> listOfTags = new ArrayList<String>();
+			List<String> listOfTags = new ArrayList<>();
 			if(mJsonTags!=null)
 			{
 			for (int i = 0; i < mJsonTags.length(); i++) {
