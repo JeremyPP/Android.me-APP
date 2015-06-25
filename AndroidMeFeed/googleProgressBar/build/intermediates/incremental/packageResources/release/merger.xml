@@ -4,7 +4,7 @@
             <enum name="folding_circles" value="0"/>
         </attr>
         <attr format="reference" name="colors"/>
-    </declare-styleable></file><file path="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\googleProgressBar\src\main\res\values\colors.xml" qualifiers=""><color name="green">#FF34A350</color><color name="blue">#FF375BF1</color><color name="red">#FFC93437</color><color name="yellow">#FFF7D23E</color></file><file path="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\googleProgressBar\src\main\res\values\defaults.xml" qualifiers=""><integer-array name="google_colors">
+    </declare-styleable></file><file path="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\googleProgressBar\src\main\res\values\colors.xml" qualifiers=""><color name="green">#FF34A350</color><color name="red">#FFC93437</color><color name="blue">#FF375BF1</color><color name="yellow">#FFF7D23E</color></file><file path="C:\Users\Michael\git\Android.me-APP\AndroidMeFeed\googleProgressBar\src\main\res\values\defaults.xml" qualifiers=""><integer-array name="google_colors">
         <item>@color/red</item>
         <item>@color/blue</item>
         <item>@color/yellow</item>

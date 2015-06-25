@@ -167,6 +167,7 @@ public class Article implements Parcelable {
 		this.mCountComments = countComments;
 		this.mCountLikes = countLikes;
 		this.mFrom = listOfFrom;
+
 		this.mJsonTags = jsonTags;
 		this.mVideoUrl=null;
 	}
@@ -308,9 +309,9 @@ public class Article implements Parcelable {
     public Article(Parcel in){
     	int id = in.readInt();//
     	List<String> from = new ArrayList<>();//
-    	in.readStringList(from);//
+		 from = in.createStringArrayList();
     	List<String> tags = new ArrayList<>();//
-    	in.readStringList(tags);//
+    	tags= in.createStringArrayList();
     	String title = in.readString();//
     	String resume = in.readString();//
     	String content = in.readString();//
@@ -351,7 +352,7 @@ public class Article implements Parcelable {
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
 		dest.writeInt(getId());//
-		dest.writeStringList(getFrom());//
+		dest.writeStringList(mFrom);//
 		try {
 			dest.writeStringList(getJsonTags());
 		} catch (JSONException e) {

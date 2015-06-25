@@ -61,6 +61,7 @@ public class ArticleActivity extends ActionBarActivity {
             try {
                 if(ArticleManager.SUCCESS==NdroidApplication.getMoreInfo(mArticle))
                 {
+					ArticlesRepository.sRepository.saveArticle(mArticle.getId(), mArticle);
                     handler.post(mShowInfo);
                 }
             } catch (Exception e) {
@@ -228,13 +229,13 @@ public class ArticleActivity extends ActionBarActivity {
 		imgPhoto.setOnClickListener(new PhotoListener());
 		mArticleRepository=new ArticlesRepository(this);
 		Article article = ArticlesRepository.sRepository.getLoadedArticle(mArticle.getId());
-		if (article != null) {
+		if ((article != null) && (article.getFrom() != null)) {
 			mArticle = article;
             showInfo();
 		} else {
 			TaskExecutor.executeTask(mGetMoreInfo);
 			//mArticle.getMoreInfo();
-			ArticlesRepository.sRepository.saveArticle(mArticle.getId(), mArticle);
+
 
 		}
 

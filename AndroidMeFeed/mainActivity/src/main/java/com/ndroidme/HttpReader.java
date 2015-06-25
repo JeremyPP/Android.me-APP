@@ -91,7 +91,8 @@ class HttpReader {
 
         }
         reader.close();
-        return webString.toString().trim();
+        Log.d("HTTP_READER", "Done with getting String");
+       return webString.toString().trim();
 
     }
 

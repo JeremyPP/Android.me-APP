@@ -216,12 +216,12 @@ public class ArticleManager {
 
 
                     String resume = article.getString("resume");
-                    //String content= article.getString("content");
-                    //String writer= article.getString("writer");
-                    //List<String> listOfFrom = new ArrayList<String>();
-                    //JSONObject from = allContent.getJSONObject("from");
-                    //listOfFrom.add(from.getString("name"));
-                    //listOfFrom.add(from.getString("link"));
+                  /* String content= article.getString("content");
+                    String writer= article.getString("writer");
+                    List<String> listOfFrom = new ArrayList<String>();
+                    JSONObject from = allContent.getJSONObject("from");
+                    listOfFrom.add(from.getString("name"));
+                    listOfFrom.add(from.getString("link"));*/
 
                     list.add(new Article(id, null, null, title, resume, null, date, null, photoUrl, countComments, countLikes));
                 }
